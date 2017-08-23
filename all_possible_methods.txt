@@ -1,0 +1,1309 @@
+st1  Average all
+st1  Average all Use
+st1  Average all Use 
+st1  Average all Use  +
+st1  Average all Use  + Average
+st1  Average all Use  + Average all
+st1  Average all Use +
+st1  Average all Use + X st1  Sum
+st1  Sum all Use
+st1  Sum X st1  Sum X Use
+st1  Sum X Use +
+st1  Sum X Use + X st1  Sum all
+st1  X st1  Average
+st1 -
+st1 - Median
+st1 - Median Use
+st1 [7] []
+st1 [7] [] -
+st1 [7] [] - X st1 Average
+st1 Average all
+st1 Average all choose...
+st1 Average all choose... all
+st1 Average all choose... all Use
+st1 Average all choose... all Use -
+st1 Average all choose... all Use - X st1 Average all none
+st1 Average all choose... Median
+st1 Average all choose... Median all
+st1 Average all choose... Median all Use
+st1 Average all none choose...
+st1 Average all none choose... X st1 Average all none choose... X X st1 Average all none choose... X X X st1 Average all none choose... X X X X st1 Average all none choose... X X X X X st1 Average all none choose... X X X X X Use
+st1 Average all none choose... X X X X X Use 
+st1 Average all Use
+st1 Average all Use 
+st1 Average all Use +
+st1 Average all Use + 
+st1 Average all Use +  Average
+st1 Average all Use +  Average choose...
+st1 Average all Use +  Average choose... all
+st1 Average all Use +  Average choose... all Use
+st1 Average all Use +  Count
+st1 Average all Use +  Count all
+st1 Average all Use +  Count all Use
+st1 Average all Use + -
+st1 Average all Use + - /
+st1 Average all Use + - / Median
+st1 Average all Use + - / Median all
+st1 Average all Use + - / Median all Use
+st1 Average all Use + - / Median all Use st2
+st1 Average all Use + - / Median all Use st2 Average
+st1 Average all Use + - / Median all Use st2 Average all
+st1 Average all Use + - / Median all Use st2 Average all Use
+st1 Average all Use + - / Median all Use st2 Average Use
+st1 Average all Use + - / Median all Use st2 Average Use all
+st1 Average all Use + - x
+st1 Average all Use + - x /
+st1 Average all Use + - x / x
+st1 Average all Use + - x / x X st1 Average all Use + X st1 Average all Use + X st2
+st1 Average all Use + Average all
+st1 Average all Use + Count
+st1 Average all Use + Count all
+st1 Average all Use + Count all Use
+st1 Average all Use + Count all Use 
+st1 Average all Use + Count all Use st2 Count
+st1 Average all Use + Count all Use st2 Count all
+st1 Average all Use + Count all Use st2 Count all Use
+st1 Average all Use + Count all Use st2 Count all Use +
+st1 Average all Use + Count all Use st2 Count all Use + Sum
+st1 Average all Use + Count all Use st2 Count all Use + Sum all
+st1 Average all Use + Count all Use st2 Count all Use + Sum all Use
+st1 Average all Use + Count all Use st2 Step1
+st1 Average all Use + Count all Use st2 Step1 +
+st1 Average all Use + Count all Use st2 Step1 + Average
+st1 Average all Use + Count all Use st2 Step1 + Average all
+st1 Average all Use + Count all Use st2 Step1 + Average all Use
+st1 Average all Use + Count all Use st2 Step1 + Average all Use st3
+st1 Average all Use + Count all Use st2 Step1 + Average all Use st3 Step2
+st1 Average all Use + Count all Use st2 Step1 /
+st1 Average all Use + Count all Use st2 Step1 / Count
+st1 Average all Use + Count all Use st2 Step1 / Count Sum
+st1 Average all Use + Count all Use st2 Step1 / Count Sum all
+st1 Average all Use + Count all Use st2 Step1 / Count Sum all Use
+st1 Average all Use + Count all Use st2 X - X st1 Average all Use + Count all Use st2 X - X st3
+st1 Average all Use + Count all Use st2 X - X st3 Average
+st1 Average all Use + Count all Use st2 X - X st3 Average all
+st1 Average all Use + Count all Use st2 X - X st3 Average all Use
+st1 Average all Use + Count all Use st2 X - X st3 Step2
+st1 Average all Use + Count all Use st2 X - X st3 Step2 /
+st1 Average all Use + Count all Use st2 X - X st3 Step2 / Step1
+st1 Average all Use + Count all Use st2 X st1 Average all Use + Count all Use st2 X -
+st1 Average all Use + Count all Use X st1 Average all Use + Count all Use st2
+st1 Average all Use + Count choose...
+st1 Average all Use + Count choose... all
+st1 Average all Use + Count choose... all Use
+st1 Average all Use + Count Count
+st1 Average all Use + Count Count all
+st1 Average all Use + Count Count all Use
+st1 Average all Use + Sum
+st1 Average all Use + Sum Count
+st1 Average all Use + Sum Count all
+st1 Average all Use + Sum Count all Use
+st1 Average all Use + Sum Count all Use st2
+st1 Average all Use + Sum Count all Use st2 Median
+st1 Average all Use + Sum Count all Use st2 Median all
+st1 Average all Use + Sum Count all Use st2 Median all Use
+st1 Average all Use + Sum Count all Use st2 X - X st1 Average all Use + Sum Count all Use st2 X - X st3
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 +
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Count
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Count all
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Count all Use
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Count all Use +
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Count all Use + 
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Sum
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Sum all
+st1 Average all Use + Sum Count all Use st2 X - X st3 X - X st4 Step2 + Step3 st5 Sum all Use
+st1 Average all Use + Sum Count all Use st2 X - X st3 X st1 Average all Use + Sum Count all Use st2 X - X st3 X -
+st1 Average all Use + Sum Count all Use st2 X st1 Average all Use + Sum Count all Use st2 X -
+st1 Average all Use + x
+st1 Average all Use + X st1 Average all Use + X st1 Average all Use + X st2
+st1 Average all Use + X st1 Average all Use + X st2
+st1 Average all Use + X st2 Average
+st1 Average all Use + X st2 Average all
+st1 Average all Use + X st2 Average all Use
+st1 Average all Use + X st2 Average all Use +
+st1 Average all Use + X st2 Median
+st1 Average all Use + X st2 Median all
+st1 Average all Use + X st2 Median all Use
+st1 Average all Use + X st2 Median all Use +
+st1 Average all Use + X st2 Median all Use + X st1 Average all Use + X st2 Median all Use + X st3
+st1 Average all Use + X st2 Median all Use + X st3 Count
+st1 Average all Use + X st2 Median all Use + X st3 Count all
+st1 Average all Use + X st2 Median all Use + X st3 Count all Use
+st1 Average all Use + X st2 Median all Use + X st3 Count all Use +
+st1 Average all Use + X st2 Median all Use + X st3 Count all Use + X st1 Average all Use x X st1 Average all Use x X st2
+st1 Average all Use + X st2 Median all Use + X st3 Count all Use -
+st1 Average all Use + X st2 Step1
+st1 Average all Use + X st2 Step1 +
+st1 Average all Use + X st2 Step1 + X st1 Average all Use + X st2 Step1 + X st3
+st1 Average all Use + X st2 Step1 + X st3 Step2
+st1 Average all Use + X st2 Step1 + X st3 Step2 +
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 +
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 +
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5 -
+st1 Average all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5 - X st1 Average all Use + Average
+st1 Average all Use + x X st1 Average all Use + x X st2
+st1 Average all Use + x X st2 Average
+st1 Average all Use + x X st2 Average all
+st1 Average all Use + x X st2 Average all Use
+st1 Average all Use + x X st2 Average all Use x
+st1 Average all Use + x X st2 Average all Use x X st1 Average all Use -
+st1 Average all Use - -
+st1 Average all Use - Median all
+st1 Average all Use - Median all Use
+st1 Average all Use - x
+st1 Average all Use - X st1 Average all Use - X st1 Average all Use - X st1 Average all Use - X st1 Average all Use - X st1 Average all Use - X st2
+st1 Average all Use - X st1 Average all Use - X st1 Average all Use - X st2
+st1 Average all Use - X st2 Average
+st1 Average all Use - X st2 Average all
+st1 Average all Use - X st2 Average all Use
+st1 Average all Use - X st2 Average all Use -
+st1 Average all Use - X st2 Average all Use - X st1 Average all Use - X st2 Average all Use - X st3
+st1 Average all Use - X st2 Average all Use - X st3 
+st1 Average all Use - X st2 Average all Use - X st3  Average
+st1 Average all Use - X st2 Average all Use - X st3  Average all
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use -
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use -
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use - X st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use - X st5
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use - X st5 Average
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use - X st5 Average all
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Average all Use - X st5 Average all Use
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use -
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 +
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 +
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7 +
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7 + Step2
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7 + Step2 st9
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7 + Step2 st9 Step8
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7 + Step2 st9 Step8 +
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X - X st6 Step1 + Step5 st7 Step6 + Step4 st8 Step7 + Step2 st9 Step8 + Step3
+st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X st1 Average all Use - X st2 Average all Use - X st3  Average all Use - X st4 Median Average all Use - X st5 X -
+st1 Average all Use - X st2 Average all Use - X st3 Average
+st1 Average all Use - X st2 Average all Use - X st3 Average all
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use -
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st4
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st4 Average
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st4 Average all
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st4 Average all Use
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st4 Average all Use -
+st1 Average all Use - X st2 Average all Use - X st3 Average all Use - X st4 Average all Use - X st1 Average all Use - Median
+st1 Average all Use - X st2 Step1
+st1 Average all Use - X st2 Step1 -
+st1 Average all Use - X st2 Step1 - X st1 Average all Use - X st2 Step1 - X st3
+st1 Average all Use - X st2 Step1 - X st3 Step2
+st1 Average all Use - X st2 Step1 - X st3 Step2 -
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 -
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 -
+st1 Average all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 - X st1 Average all Use - X st2
+st1 Average all Use - X st2 X - X st1 Average all Use - X st2 X - X st3
+st1 Average all Use - X st2 X - X st3 Average
+st1 Average all Use - X st2 X - X st3 Average all
+st1 Average all Use - X st2 X - X st3 Average all Use
+st1 Average all Use - X st2 X st1 Average all Use - X st2 X -
+st1 Average all Use - x X st1 Average all Use /
+st1 Average all Use / -
+st1 Average all Use / - X st1 Average all Use / - X st2
+st1 Average all Use / - X st2 Average
+st1 Average all Use / - X st2 Average Step1
+st1 Average all Use / - X st2 Average Step1 Step1
+st1 Average all Use / - X st2 Average Step1 Step1 Step1
+st1 Average all Use / - X st2 Step1
+st1 Average all Use / - X st2 Step1 -
+st1 Average all Use / - X st2 Step1 - X st1 Average all Use / - X st2 Step1 - X st3
+st1 Average all Use / - X st2 Step1 - X st3 Step2
+st1 Average all Use / - X st2 Step1 - X st3 Step2 -
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 -
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 -
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 - X st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 - X st6
+st1 Average all Use / - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 - X st6 Step4
+st1 Average all Use / Count all
+st1 Average all Use / Count all Use
+st1 Average all Use / Count all Use st2
+st1 Average all Use / Count all Use st2 X - X st1 Average all Use / Count all Use st2 X - X st3
+st1 Average all Use / Count all Use st2 X st1 Average all Use / Count all Use st2 X -
+st1 Average all Use / Count X st1 Average all Use / Count X X st1 Average all Use / Count X X X st1 Average all Use / Count X X X Use
+st1 Average all Use / Median
+st1 Average all Use / Median Use
+st1 Average all Use / Median Use all
+st1 Average all Use / Sum
+st1 Average all Use / Sum all
+st1 Average all Use / Sum all Use
+st1 Average all Use / X st1 Average all Use / Count
+st1 Average all Use / X st1 Average all Use / X st2
+st1 Average all Use x
+st1 Average all Use X 
+st1 Average all Use X  +
+st1 Average all Use X  + 
+st1 Average all Use X  +  +
+st1 Average all Use x +
+st1 Average all Use x + -
+st1 Average all Use x + - Average
+st1 Average all Use x + - Average all
+st1 Average all Use x X st1 Average all Use x X st1 Average all Use x X st2
+st1 Average all Use x X st2 Average
+st1 Average all Use x X st2 Average all
+st1 Average all Use x X st2 Average all Use
+st1 Average all Use x X st2 Average all Use x
+st1 Average all Use x X st2 Average all Use x X st1 Average all Use x X st2 Average all Use x X st3
+st1 Average all Use x X st2 Average all Use x X st3 Average
+st1 Average all Use x X st2 Average all Use x X st3 Average all
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st4
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st4 Average
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st4 Average all
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st4 Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st4 Average all Use x
+st1 Average all Use x X st2 Average all Use x X st3 Average all Use x X st4 Average all Use x X st1 Average all Use x X st2 Average all Use x X st1 Average all Use x X st2 Average all Use x X X st1 Average all Use x X st1 Average all Use x X st1 Average all Use - X st1 Average all Use - X st2
+st1 Average all Use x X st2 Average all Use x X st3 Sum
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use -
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use -
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 -
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5 st8
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5 st8 Average
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5 st8 Average all
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5 st8 Average all Use
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5 st8 Average all Use -
+st1 Average all Use x X st2 Average all Use x X st3 Sum Sum Average all Use x X st4 Average all Use x X st5 Average all Use - X st6 Average all Use - X st7 Step1 - Step5 st8 Average all Use - X st1 Average choose... all Use /
+st1 Average Average
+st1 Average Average all
+st1 Average Average all Use
+st1 Average Average all Use -
+st1 Average Average all Use - Median
+st1 Average Average all Use - Median all
+st1 Average Average all Use - Median all Use
+st1 Average Average Average
+st1 Average Average Average all
+st1 Average Average Average all Use
+st1 Average Average Average all Use -
+st1 Average Average Average all Use - Median
+st1 Average Average Average all Use - Median all
+st1 Average Average Average all Use - Median all Use
+st1 Average choose...
+st1 Average choose... all
+st1 Average choose... all none
+st1 Average choose... all none Use
+st1 Average choose... all none Use +
+st1 Average choose... all none Use + X st1 Average choose... all none Use + X st2
+st1 Average choose... all none Use + X st2 Step1
+st1 Average choose... all none Use + X st2 Step1 +
+st1 Average choose... all none Use + X st2 Step1 + X st1 Average choose... all none Use + X st2 Step1 + X st3
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 +
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 +
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 +
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step1
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Sum
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Sum Sum
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Sum Sum Average
+st1 Average choose... all none Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Sum Sum Average Use
+st1 Average choose... all Use
+st1 Average choose... all Use +
+st1 Average choose... all Use + X st1 Average Sum X st1 Average Sum X X st1 Average Sum X X X st1 Sum X X st1 Sum X X X st1 Sum X X X X st1 Sum X X X X Use
+st1 Average choose... all Use -
+st1 Average choose... all Use - X st1 Average Count
+st1 Average choose... all Use / X st1 Count
+st1 Average choose... X st1 Average choose... X Use
+st1 Average choose... X st1 Average choose... X X st1 Average choose... X X X st1 Average choose... X X X X st1 Average choose... X X X X X st1 Average choose... X X X X X Use
+st1 Average choose... X X X X X Use +
+st1 Average Count all
+st1 Average Count all Use
+st1 Average Median
+st1 Average Median all
+st1 Average Median all Use
+st1 Average none
+st1 Average none all
+st1 Average none all Use
+st1 Average none all Use /
+st1 Average none all Use / X st1 Average none none
+st1 Average Sum
+st1 Average Sum all
+st1 Average Sum all Use
+st1 Average Use
+st1 Average Use all
+st1 Average Use all +
+st1 Average Use all + Count
+st1 Average Use all + Count all
+st1 Average Use all + Count all Use
+st1 Average X st1 Average X st1 Average X X st1 Average X X X st1 Average X X X X st1 Average X X X X X st1 Average X X X X X Use
+st1 Average X st1 Average X Use
+st1 Average X st1 Average X X st1 Average X X Use
+st1 Average X Use
+st1 Average X X st1 Average X X X st1 Average X X X X st1 Average X X X X Use
+st1 Average X X st1 Average X X X st1 Average X X X X st1 Average X X X X X st1 Average X X X X X all
+st1 Average X X st1 Average X X X st1 Average X X X X st1 Average X X X X X st1 Average X X X X X Use
+st1 Average X X X X X Use +
+st1 Average X X X X X Use + +
+st1 Average X X X X X Use + + Count
+st1 Average X X X X X Use + + Count all
+st1 Average X X X X X Use + + Count all Use
+st1 Count 
+st1 Count  choose...
+st1 Count  choose... X st1 Count  choose... X X st1 Count  choose... X X X st1 Count X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X X X X X 
+st1 Count all
+st1 Count all choose...
+st1 Count all choose... X st1 Count all choose... X X 
+st1 Count all choose... X X  X st1 Count all choose... X X  X X st1 Count all choose... X X  X X X st1 Count all Use
+st1 Count all Use +
+st1 Count all Use + Average all
+st1 Count all Use + Average all Use
+st1 Count all Use + Average Average
+st1 Count all Use + Average Average all
+st1 Count all Use + Average Average all Use
+st1 Count all Use + Count
+st1 Count all Use + Count all
+st1 Count all Use + Count all Use
+st1 Count all Use + Count Average
+st1 Count all Use + Count Average all
+st1 Count all Use + Count Average all Use
+st1 Count all Use + X st1 Count all Use + X st2
+st1 Count all Use + X st2 Step1
+st1 Count all Use + X st2 Step1 +
+st1 Count all Use + X st2 Step1 + X st1 Count all Use + X st2 Step1 + X st3
+st1 Count all Use + X st2 Step1 + X st3 Step2
+st1 Count all Use + X st2 Step1 + X st3 Step2 +
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 +
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 +
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5 /
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5 / X st1 Count all Use + Average
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 /
+st1 Count all Use + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 / X st1 Count all Use + X st2 Step1 -
+st1 Count all Use + X st2 Step1 - X st1 Count all Use + X st1 Count all Use + X st2
+st1 Count all Use -
+st1 Count all Use - +
+st1 Count all Use - + X st1 Count all Use - X st1 Count all Use - X st1 Count all Use - Average
+st1 Count all Use - Average all
+st1 Count all Use - Average all Use
+st1 Count all Use - Sum
+st1 Count all Use - Sum all
+st1 Count all Use - Sum all Use
+st1 Count all Use - X 
+st1 Count all Use /
+st1 Count all Use / +
+st1 Count all Use / + Sum
+st1 Count all Use / + Sum none
+st1 Count all Use / + Sum none all
+st1 Count all Use / + Sum none all Use
+st1 Count all Use x
+st1 Count Average
+st1 Count Average all
+st1 Count Average all Use
+st1 Count Average all Use -
+st1 Count Average all Use - X st1 Count choose...
+st1 Count choose... Sum
+st1 Count choose... Sum all
+st1 Count choose... Sum all Use
+st1 Count choose... Sum all Use /
+st1 Count choose... Sum all Use / Count
+st1 Count choose... Sum all Use / Count Sum
+st1 Count choose... Sum all Use / Count Sum all
+st1 Count choose... Sum all Use / Count Sum all Use
+st1 Count choose... X st1 Count choose... X X st1 Count choose... X st1 Count choose... X X st1 Count choose... X X X st1 Count choose... X X X X st1 Count choose... X X X X Use
+st1 Count choose... X st1 Count choose... X X st1 Count choose... X X X st1 Count choose... X X X X st1 Count choose... X X X X X st1 Count choose... X X X X X X st1 Count choose... X X X X X X Use
+st1 Count choose... X X st1 Count choose... X X X st1 Count choose... X X X X st1 Count choose... X X X X Use
+st1 Count choose... X X X X Use +
+st1 Count choose... X X X X Use + 
+st1 Count choose... X X X X X Use
+st1 Count choose... X X X X X X Use +
+st1 Count choose... X X X X X X Use + Count
+st1 Count choose... X X X X X X Use + Count X st1 Count choose... X X X X X X Use + Count X X st1 Count choose... X X X X X X Use + Count X X X st1 Count choose... X X X X X X Use + Count X X X X st1 Count choose... X X X X X X Use + Count X X X X Use
+st1 Count Count
+st1 Count Count all
+st1 Count Count all none
+st1 Count Count all none choose...
+st1 Count Count all none choose... X st1 Count Count all none choose... X X st1 Count Count all none choose... X X X st1 Count Count all none choose... X X X X st1 Count Count all none choose... X X X X Use
+st1 Count Count all none choose... X X X X Use /
+st1 Count Count all none choose... X X X X Use / +
+st1 Count Count all none choose... X X X X Use / + -
+st1 Count Count all none choose... X X X X Use / + - Count
+st1 Count Count all none choose... X X X X Use / + - Count X st1 Count Count all none choose... X X X X Use / + - Count X X st1 Count Count all none choose... X X X X Use / + - Count X X X st1 Count Count all none choose... X X X X Use / + - Count X X X X st1 Count Count all none choose... X X X X Use / + - Count X X X X X st1 Count Count all none choose... X X X X Use / + - Count X X X X X Use
+st1 Count Count all Use
+st1 Count Count all Use +
+st1 Count Count all Use + Average
+st1 Count Count all Use + Average all
+st1 Count Count all Use + Average all Use
+st1 Count Count Average
+st1 Count Count Average X st1 Count Count Average X X st1 Count Count Average X X X st1 Count Count Average X X X X st1 Count Count Average X X X X Use
+st1 Count Count Average X X X X Use -
+st1 Count Count Average X X X X Use - Count
+st1 Count Count Average X X X X Use - Count Sum
+st1 Count Count Average X X X X Use - Count Sum Average
+st1 Count Count Average X X X X Use - Count Sum Average X st1 Count Count Average X X X X Use - Count Sum Average X X st1 Count Count Average X X X X Use - Count Sum Average X X X st1 Count Count Average X X X X Use - Count Sum Average X X X X st1 Count Count Average X X X X Use - Count Sum Average X X X X X st1 Count Count Average X X X X Use - Count Sum Average X X X X X X st1 Count Count choose...
+st1 Count Count choose... all
+st1 Count Count choose... all Use
+st1 Count Count choose... all Use +
+st1 Count Count choose... all Use + Average
+st1 Count Count choose... all Use + Average all
+st1 Count Count choose... all Use + Average all Use
+st1 Count Count none
+st1 Count Count none Use
+st1 Count none
+st1 Count none all
+st1 Count none all none
+st1 Count none all none Median
+st1 Count none all none Median all
+st1 Count Sum
+st1 Count Sum all
+st1 Count Sum all Use
+st1 Count Sum all Use -
+st1 Count Sum all Use - Count
+st1 Count Sum all Use - Count all
+st1 Count Sum all Use - Count all Use
+st1 Count Sum all Use /
+st1 Count Sum all Use / X st1 Count Sum all Use X 
+st1 Count Sum all Use X  +
+st1 Count Sum all Use X  + X st1 Count Use
+st1 Count Sum X st1 Count Sum X X st1 Count Sum X X Use
+st1 Count Sum X X Use -
+st1 Count Sum X X Use - Sum
+st1 Count Sum X X Use - Sum X st1 Count Sum X X Use - Sum X X st1 Count Sum X X Use - Sum X X Use
+st1 Count Use all
+st1 Count X st1 Count X X st1 Count X X X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X X X X X st1 Count X X X X X X st1 Count X X X X X X X st1 Count X X X X X X X Use
+st1 Count X st1 Count X X st1 Count X X X st1 Count X X X Use
+st1 Count X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X Use
+st1 Count X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X X X X Use
+st1 Count X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X X X X X st1 Count X X X X X X Use
+st1 Count X Use
+st1 Count X Use +
+st1 Count X Use + Count
+st1 Count X Use + Count X st1 Count X Use + Count X X st1 Count X Use + Count X X X st1 Count X Use + Count X X X X st1 Count X Use + Count X X X X Use
+st1 Count X X 
+st1 Count X X  X st1 Count X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X Use
+st1 Count X X st1 Count X X Use
+st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X Use
+st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X X X X Use
+st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X X X X X st1 Count X X X X X X Use
+st1 Count X X Use
+st1 Count X X Use +
+st1 Count X X Use + x
+st1 Count X X Use + x Count
+st1 Count X X Use + x Count X st1 Count X X Use + x Count X Use
+st1 Count X X X 
+st1 Count X X X  X st1 Count X X X  X Use
+st1 Count X X X st1 Count X X st1 Count X X X st1 Count X X X Use
+st1 Count X X X st1 Count X X X Use
+st1 Count X X X st1 Count X X X X st1 Count X X X X X st1 Count X X Use
+st1 Count X X X X Use +
+st1 Count X X X X Use -
+st1 Count X X X X Use - X st1 Count X st1 Count X X st1 Count X X X st1 Count X X X Use
+st1 Count X X X X X Use -
+st1 Count X X X X X Use - 
+st1 Count X X X X X Use -  X st1 Count X X st1 Count X X X st1 Count X X X X st1 Count X X X X Use
+st1 Count X X X X X X  X st1 Count X X X st1 Count X X X Use
+st1 Count X X X X X X Use +
+st1 Count X X X X X X Use + -
+st1 Count X X X X X X Use + - Count
+st1 Count X X X X X X Use + - Count X st1 Count X X X X X X Use + - Count X X st1 Count X X X X X X Use + - Count X X X st1 Count X X X X X X Use + - Count X X X X st1 Count X X X X X X Use + - Count X X X X Use
+st1 Count X X X X X X Use + Count
+st1 Count X X X X X X Use + Count X st1 Count X X X X X X Use + Count X X st1 Count X X X X X X Use + Count X X X st1 Count X X X X X X Use + Count X X X X st1 Count X X X X X X Use + Count X X X X Use
+st1 Median
+st1 Median all
+st1 Median all all
+st1 Median all all Use
+st1 Median all Sum
+st1 Median all Sum choose...
+st1 Median all Sum choose... Median
+st1 Median all Sum choose... Median all
+st1 Median all Use
+st1 Median all Use 
+st1 Median all Use +
+st1 Median all Use + /
+st1 Median all Use + / Count
+st1 Median all Use + / Count Count
+st1 Median all Use + / Count Count all
+st1 Median all Use + / Count Count all Use
+st1 Median all Use + X st1 Median all Use + X st1 Median all Use + X st1 Median all Use + X st1 Median all Use -
+st1 Median all Use - 
+st1 Median all Use - Average
+st1 Median all Use - Average all
+st1 Median all Use - Average all Use
+st1 Median all Use - Average Use
+st1 Median all Use - Average Use all
+st1 Median all Use - Count
+st1 Median all Use - Count all
+st1 Median all Use - Count all Use
+st1 Median all Use x
+st1 Median all Use x Average
+st1 Median all Use x Average choose...
+st1 Median all Use x Average choose... X st1 Median all Use x Average choose... X X st1 Median all Use x Average choose... X X X st1 Median all Use x Average choose... X X X X st1 Median all Use x Average choose... X X X X Use
+st1 Median Average
+st1 Median Average all
+st1 Median Average all choose...
+st1 Median Average all choose... Count
+st1 Median Average all choose... Count Sum
+st1 Median Average all choose... Count Sum all
+st1 Median Average all choose... Count Sum all Use
+st1 Median Average none
+st1 Median Average none Use
+st1 Sum
+st1 Sum all
+st1 Sum all all
+st1 Sum all all Use
+st1 Sum all Use
+st1 Sum all Use 
+st1 Sum all Use +
+st1 Sum all Use + Average X st1 Sum all Use + Average X X st1 Sum all Use + Average X X Use
+st1 Sum all Use + Average X X st1 Sum all Use + Average X X Use
+st1 Sum all Use + Average X X Use st2
+st1 Sum all Use + Average X X Use st2 Step1
+st1 Sum all Use + Average X X Use st2 Step1 x
+st1 Sum all Use + Average X X Use st2 Step1 x Median
+st1 Sum all Use + Average X X Use st2 Step1 x Median all
+st1 Sum all Use + Average X X Use st2 Step1 x Median all Use
+st1 Sum all Use + Average X X Use st2 Step1 x Median all Use st3
+st1 Sum all Use + Average X X Use st2 Step1 x Median all Use st3 Step2
+st1 Sum all Use + Average X X Use st2 Step1 x Median all Use st3 Step2 -
+st1 Sum all Use + Average X X Use st2 Step1 x Median all Use st3 Step2 - Step1
+st1 Sum all Use + Median
+st1 Sum all Use + Median all
+st1 Sum all Use + Median all Use
+st1 Sum all Use + Median all Use st2
+st1 Sum all Use + Median all Use st2 Step1
+st1 Sum all Use + Median all Use st2 Step1 x
+st1 Sum all Use + Sum
+st1 Sum all Use + X st1 Sum all Use + X st2
+st1 Sum all Use + X st2 Step1
+st1 Sum all Use + X st2 Step1 +
+st1 Sum all Use + X st2 Step1 + X st1 Sum all Use + X st2 Step1 + X st3
+st1 Sum all Use + X st2 Step1 + X st3 Step2
+st1 Sum all Use + X st2 Step1 + X st3 Step2 +
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18 st19
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18 st19 st20
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18 st19 st20 st21
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18 st19 st20 st21 st22
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18 st19 st20 st21 st22 st23
+st1 Sum all Use + X st2 Step1 + X st3 Step2 + X st4 st5 st6 st7 st8 st9 st10 st11 st12 st13 st14 st15 st16 st17 st18 st19 st20 st21 st22 st23 st24
+st1 Sum all Use + X st2 Sum
+st1 Sum all Use + X st2 Sum 
+st1 Sum all Use + X st2 Sum  Average
+st1 Sum all Use + X st2 Sum  Average all
+st1 Sum all Use + X st2 Sum  Average all Use
+st1 Sum all Use + X st2 Sum  Average all Use /
+st1 Sum all Use + X st2 Sum  Average all Use / X st1 Sum all Use + X st1 Sum all Use + Average
+st1 Sum all Use -
+st1 Sum all Use - Average all
+st1 Sum all Use - Average all Use
+st1 Sum all Use - Average all Use st2
+st1 Sum all Use - Average all Use st2 Step1
+st1 Sum all Use - Average all Use st2 Step1 x
+st1 Sum all Use - Average all Use st2 Step1 x Count
+st1 Sum all Use - Average all Use st2 Step1 x Count all
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use st3
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use st3 Step2
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use st3 Step2 /
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use st3 Step2 / Median
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use st3 Step2 / Median all
+st1 Sum all Use - Average all Use st2 Step1 x Count all Use st3 Step2 / Median all Use
+st1 Sum all Use - X st1 Sum all Use - X st2
+st1 Sum all Use - X st2 Step1
+st1 Sum all Use - X st2 Step1 -
+st1 Sum all Use - X st2 Step1 - X st1 Sum all Use - X st2 Step1 - X st3
+st1 Sum all Use - X st2 Step1 - X st3 Step2
+st1 Sum all Use - X st2 Step1 - X st3 Step2 -
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 -
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 -
+st1 Sum all Use - X st2 Step1 - X st3 Step2 - X st4 Step3 - X st5 Step4 - X st1 Sum all Use / Count all Use st2
+st1 Sum all Use - X st2 X st1 Sum all Use - X st1 Sum all Use - X st1 Sum all Use - Average
+st1 Sum all Use /
+st1 Sum all Use / -
+st1 Sum all Use / - X st1 Sum all Use / - X st2
+st1 Sum all Use / - X st2 Count
+st1 Sum all Use / - X st2 Count all
+st1 Sum all Use / - X st2 Count all Use
+st1 Sum all Use / - X st2 Count all Use /
+st1 Sum all Use / - X st2 Count all Use / Step1
+st1 Sum all Use / Average
+st1 Sum all Use / Average Count
+st1 Sum all Use / Average Count all
+st1 Sum all Use / Average Count all Use
+st1 Sum all Use / Average Count all Use st2
+st1 Sum all Use / Average Count all Use st2 X st1 Sum all Use - X st1 Sum all Use - X st2
+st1 Sum all Use / Count
+st1 Sum all Use / Count all
+st1 Sum all Use / Count all Use
+st1 Sum all Use / Count all Use st2 Step1
+st1 Sum all Use / Count all Use st2 Step1 +
+st1 Sum all Use / Count all Use st2 Step1 + Count
+st1 Sum all Use / Count all Use st2 Step1 + Count all
+st1 Sum all Use / Count all Use st2 Step1 + Count all Use
+st1 Sum all Use / Count all Use st2 Step1 + Count Count
+st1 Sum all Use / Count all Use st2 Step1 + Count Count all
+st1 Sum all Use / Count all Use st2 Step1 + Count Count all Use
+st1 Sum all Use / X st1 Sum all Use / X st1 Sum all Use / X st2
+st1 Sum Average
+st1 Sum Average all
+st1 Sum Average all Use
+st1 Sum Average all Use +
+st1 Sum Average all Use + Count
+st1 Sum Average all Use + Count all
+st1 Sum Average all Use + Count all Use
+st1 Sum Average all Use -
+st1 Sum Average all Use - Count
+st1 Sum Average all Use - Count all
+st1 Sum Average all Use - Count all Use
+st1 Sum Average all Use /
+st1 Sum Average all Use / Count
+st1 Sum Average all Use / Count all
+st1 Sum Average all Use / Count all Use
+st1 Sum Average all Use / Count all Use st2
+st1 Sum Average all Use / Count all Use st2 Step1
+st1 Sum Average all Use / Count all Use st2 Step1 +
+st1 Sum Average all Use / Count all Use st2 Step1 + Count
+st1 Sum Average all Use / Count all Use st2 Step1 + Count all
+st1 Sum Average all Use / Count all Use st2 Step1 + Count all Use
+st1 Sum choose...
+st1 Sum choose... all
+st1 Sum choose... all Use
+st1 Sum choose... Average
+st1 Sum choose... Average all
+st1 Sum choose... Average all Use
+st1 Sum choose... Average all Use +
+st1 Sum choose... Average all Use + X st1 Sum choose... Average all Use + X st2
+st1 Sum choose... Average all Use + X st2 Count
+st1 Sum choose... Average all Use + X st2 Count all
+st1 Sum choose... Average all Use + X st2 Count all Use
+st1 Sum choose... Average all Use + X st2 Median
+st1 Sum choose... Average all Use + X st2 Median all
+st1 Sum choose... Average all Use + X st2 Median all Use
+st1 Sum choose... Average all Use + X st2 Median all Use +
+st1 Sum choose... Average all Use + X st2 Median all Use + X st1 Sum none
+st1 Sum choose... X st1 Sum choose... X Use
+st1 Sum choose... X st1 Sum choose... X X st1 Sum choose... X X Use
+st1 Sum choose... X Use -
+st1 Sum choose... X Use - Sum
+st1 Sum choose... X Use - Sum X st1 Sum choose... X Use - Sum X Use
+st1 Sum choose... X X Use -
+st1 Sum choose... X X Use - X 
+st1 Sum none Use
+st1 Sum none Use +
+st1 Sum Sum
+st1 Sum Sum all Use
+st1 Sum Sum all Use /
+st1 Sum Sum all Use / Count
+st1 Sum Sum all Use / Count none
+st1 Sum Sum all Use / Count none all
+st1 Sum Sum all Use / Count none all Use
+st1 Sum Sum choose...
+st1 Sum Sum choose... Count
+st1 Sum Sum choose... Count Sum
+st1 Sum Sum choose... Count Sum all
+st1 Sum Sum choose... Count Sum all Use
+st1 Sum Sum choose... Count Sum all Use -
+st1 Sum Sum choose... Count Sum all Use - X st1 Sum Sum all
+st1 Sum Use
+st1 Sum Use all
+st1 Sum Use all 
+st1 Sum X st1 Sum X X st1 Sum X X Use
+st1 Sum X st1 Sum X X st1 Sum X X X st1 Sum X X X Use
+st1 Sum X st1 Sum X X st1 Sum X X X st1 Sum X X X X st1 Sum X X X X X st1 Sum X st1 Sum X X st1 Sum X X X st1 Sum X X X Use
+st1 Sum X st1 Sum X X st1 Sum X X X st1 Sum X X X X st1 Sum X X X X X st1 Sum X X X X X Use
+st1 Sum X X st1 Sum X X X st1 Sum X X X X st1 Sum X X X X Use
+st1 Sum X X Use
+st1 Sum X X Use +
+st1 Sum X X Use + -
+st1 Sum X X Use + - Count
+st1 Sum X X Use + - Count Sum
+st1 Sum X X Use + - Count Sum choose...
+st1 Sum X X Use + - Count Sum choose... X st1 Sum X X Use + - Count Sum choose... X X st1 Sum X X Use + - Count Sum choose... X X Use
+st1 Sum X X Use -
+st1 Sum X X Use - Sum
+st1 Sum X X Use - Sum X st1 Sum X X Use - Sum X X st1 Sum X X Use - Sum X X Use
+st1 Sum X X Use - X st1 Sum X st1 Sum X X st1 Sum X X Use
+st1 Sum X X X st1 Sum X X X X st1 Sum X X X X Use
+st1 Sum X X X st1 Sum X X X X st1 Sum X X X X X st1 Sum X X X X X Use
+st1 Sum X X X X st1 Sum X X X X X st1 Sum X X X X X Use
+st1 Sum X X X X Use /
+st1 Sum X X X X Use / X st1 Sum X st1 Sum X X st1 Sum X X X st1 Sum X X X X st1 Sum X X X X Use
+st1 Sum X X X X X Use 
+st1 Use
+st1 X 
+st1 X  +
+st1 X  + Average
+st1 X  + Average all
+st1 X  + Average all Use
+st1 X  -
+st1 X  - X 
+st1 X  - X st1 X 
+st1 X  - X st1 X  - X 
+st1 X  - X st1 X  - X st2
+st1 X  - X st2 X 
+st1 X  - X st2 X  -
+st1 X  - X st2 X  - X st1 X  - X st2 X  - X st3
+st1 X  - X st2 X  - X st3 Step1
+st1 X  - X st2 X  - X st3 Step1 +
+st1 X  - X st2 X  - X st3 Step1 + Step2
+st1 X  - X st2 X - X st1 X  - X st2 X - X st3
+st1 X  - X st2 X - X st3 Step2
+st1 X  - X st2 X - X st3 Step2 -
+st1 X  - X st2 X - X st3 Step2 - Step1
+st1 X  - X st2 X - X st3 Step2 - Step1 st4
+st1 X  - X st2 X - X st3 Step2 - Step1 st4 Step3
+st1 X  - X st2 X - X st3 Step2 - Step1 st4 Step3 -
+st1 X  - X st2 X - X st3 Step2 - Step1 st4 Step3 - Step1
+st1 X  - X st2 X st1 X  - X st2 X -
+st1 X +
+st1 X + 
+st1 X +  +
+st1 X +  + X 
+st1 X + -
+st1 X + - X st1 X + - X st2
+st1 X + - X st1 X + Average
+st1 X + - X st1 X + X st1 X + X st1 X + X st2
+st1 X + - X st1 X + X st1 X + X st2
+st1 X + - X st2 X - X st1 X + - X st2 X - X st3
+st1 X + - X st2 X - X st3 Step1
+st1 X + - X st2 X - X st3 Step1 +
+st1 X + - X st2 X - X st3 Step1 + Step2
+st1 X + - X st2 X st1 X + - X st2 X -
+st1 X + Average
+st1 X + Average all
+st1 X + Average all Use
+st1 X + Average all Use st2
+st1 X + Average all Use st2 Step1
+st1 X + Average choose...
+st1 X + Average choose... X st1 X + Average choose... X X st1 X + Average choose... X X Use
+st1 X + Sum
+st1 X + Sum all
+st1 X + Sum all Use
+st1 X + X 
+st1 X + X  st2
+st1 X + X  st2 Average
+st1 X + X  st2 Average all
+st1 X + X  st2 Average all Use
+st1 X + X  st2 Average all Use +
+st1 X + X  st2 Average all Use + X st1 X -
+st1 X + X  st2 X + X st1 X + X  st2 X + X st3
+st1 X + X  st2 X + X st3 X + X st1 X + X  st2 X + X st3 X + X st4
+st1 X + X  st2 X + X st3 X st1 X + X  st2 X + X st3 X st1 X + X  st2 X + X st3 X +
+st1 X + X  st2 X st1 X + X  st2 X +
+st1 X + X st1 X + X st1 X + X st1 X + X st1 X + X st1 X -
+st1 X + X st1 X + X st1 X + X st1 X + X st2
+st1 X + X st1 X + X st1 X + X st2
+st1 X + X st1 X + X st1 X -
+st1 X + X st1 X + X st2
+st1 X + X st2 Average
+st1 X + X st2 Average all
+st1 X + X st2 Average all Use
+st1 X + X st2 Average all Use +
+st1 X + X st2 Average all Use + X st1 X + X st2 Average all Use + X st3
+st1 X + X st2 Average all Use + X st3 X + Step2
+st1 X + X st2 Average all Use + X st3 X + Step2 st4
+st1 X + X st2 Average all Use + X st3 X + Step2 st4 X st1 X + X st2 Step1
+st1 X + X st2 Average all Use + X st3 X st1 X + X st2 Average all Use + X st3 X +
+st1 X + X st2 Count all
+st1 X + X st2 Count all all
+st1 X + X st2 Count all all Use
+st1 X + X st2 Count all all Use +
+st1 X + X st2 Count all all Use + X st1 X + X st2 Count all all Use + X st3
+st1 X + X st2 Count all all Use + X st3 X st1 X + X st2 Count all all Use + X st3 X +
+st1 X + X st2 Count Count
+st1 X + X st2 Count Count X st1 X + X st2 Count Count X X st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X  st5
+st1 X + X st2 Step1
+st1 X + X st2 Step1 +
+st1 X + X st2 Step1 + X st1 X + X st2 Step1 + X st1 X + X st2 Step1 + X st3
+st1 X + X st2 Step1 + X st1 X + X st2 Step1 + X st3
+st1 X + X st2 Step1 + X st3 
+st1 X + X st2 Step1 + X st3  X st1 X + X st2 Step1 + X st3  X /
+st1 X + X st2 Step1 + X st3 Step2
+st1 X + X st2 Step1 + X st3 Step2 +
+st1 X + X st2 Step1 + X st3 Step2 + X st1 X + X st1 X + X st2
+st1 X + X st2 Step1 + X st3 Step2 + X st1 X + X st2 Step1 + X st3 Step2 + X st4
+st1 X + X st2 Step1 + X st3 Step2 + X st1 X + X st2 Step1 + X st3 Step2 /
+st1 X + X st2 Step1 + X st3 Step2 + X st1 X + X st2 Sum
+st1 X + X st2 Step1 + X st3 Step2 + X st1 X -
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Count
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Count choose...
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Count choose... all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Count choose... all Use
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step2
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 +
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X  st5 Step4
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X  st5 Step4 /
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X  st5 Step4 / Count
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X  st5 Step4 / Count all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X  st5 Step4 / Count all Use
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 X + X st1 X + X st2
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 X + X st2 Step1 + X st1 X + X st2 Step1 + X st3
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X 
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count all choose...
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count all choose... all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count all choose... all Use
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count Use
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count Use all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count Use all +
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count Use all + Average
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count Use all + Average Use
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Count Use all + Average Use all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step3
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 +
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + /
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + / Count
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + / Count all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + / Count all Use
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 + X st6 Step5 /
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 /
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 + X st5 Step4 / X st1 X + X st2 Step1 + X st3 Step2 -
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 -
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 - X st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 /
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 /
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 / Count
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 / Count all
+st1 X + X st2 Step1 + X st3 Step2 + X st4 Step3 / Count all Use
+st1 X + X st2 Step1 + X st3 Step2 - X st1 X + X st2 Step1 + X st3 Step2 - X st4
+st1 X + X st2 Step1 + X st3 Step2 - X st4 Step3
+st1 X + X st2 Step1 + X st3 Step2 - X st4 Step3 x
+st1 X + X st2 Step1 + X st3 Step2 - X st4 Step3 x X st1 X + X st2 Step1 + X st3 Step2 /
+st1 X + X st2 Step1 + X st3 Step2 /
+st1 X + X st2 Step1 + X st3 Step2 / X st1 X + X st1 X + X st2
+st1 X + X st2 Step1 + X st3 Step2 / X st1 X + X st2 Step1 + X st3 Step2 / X st4
+st1 X + X st2 Step1 + X st3 Step2 / X st4 Step3
+st1 X + X st2 Step1 + X st3 Step2 / X st4 Step3 +
+st1 X + X st2 Step1 + X st3 Step2 / X st4 Step3 + X st1 X + X st2 Step1 + x
+st1 X + X st2 Step1 + X st3 X + Step2
+st1 X + X st2 Step1 + X st3 X + Step2 st4
+st1 X + X st2 Step1 + X st3 X + Step2 st4 Step3
+st1 X + X st2 Step1 + X st3 X + Step2 st4 Step3 +
+st1 X + X st2 Step1 + X st3 X + Step2 st4 Step3 + X st1 X -
+st1 X + X st2 Step1 + X st3 X st1 X + X st2 Step1 + X st3 X +
+st1 X + X st2 Step1 + x Step1
+st1 X + X st2 Step1 + x Step1 st3
+st1 X + X st2 Sum
+st1 X + X st2 Sum all
+st1 X + X st2 Sum all choose...
+st1 X + X st2 Sum all choose... Step1
+st1 X + X st2 Sum all choose... Step1 X st1 X + X st2 Sum all choose... Step1 X X st1 X + X st2 Sum Average
+st1 X + X st2 Sum all Use
+st1 X + X st2 Sum Average all
+st1 X + X st2 X  +
+st1 X + X st2 X  + X st1 X + X st2 X +
+st1 X + X st2 X + X st1 X + X st1 X + X st2
+st1 X + X st2 X + X st1 X + X st2 X + X st3
+st1 X + X st2 X + X st3 Step1
+st1 X + X st2 X + X st3 Step1 +
+st1 X + X st2 X + X st3 Step1 + 
+st1 X + X st2 X + X st3 Step1 +  -
+st1 X + X st2 X + X st3 Step1 +  - Step2
+st1 X + X st2 X + X st3 Step1 + Step2
+st1 X + X st2 X + X st3 Step1 + Step2 st4
+st1 X + X st2 X + X st3 Step1 + Step2 st4 Step1
+st1 X + X st2 X + X st3 Step1 + Step2 st4 Step1 /
+st1 X + X st2 X + X st3 Step1 + Step2 st4 Step1 / Step2
+st1 X + X st2 X + X st3 Step1 -
+st1 X + X st2 X + X st3 Step1 - 
+st1 X + X st2 X + X st3 Step1 - -
+st1 X + X st2 X + X st3 Step1 - - Step2
+st1 X + X st2 X + X st3 Step1 - Step2
+st1 X + X st2 X + X st3 Step1 - Step2 
+st1 X + X st2 X + X st3 Step1 /
+st1 X + X st2 X + X st3 Step1 / Step2
+st1 X + X st2 X + X st3 Step1 / Step2 st4
+st1 X + X st2 X + X st3 Step1 / Step2 st4 Step3
+st1 X + X st2 X + X st3 Step1 / Step2 st4 Step3 +
+st1 X + X st2 X + X st3 Step1 / Step2 st4 Step3 + X st1 X + X st2 X st1 X + X st2 X 
+st1 X + X st2 X + X st3 Step2
+st1 X + X st2 X + X st3 Step2 x
+st1 X + X st2 X + X st3 Step2 x -
+st1 X + X st2 X + X st3 Step2 x - Step1
+st1 X + X st2 X + X st3 X + X st1 X + X st2 X + X st3 X + X st4
+st1 X + X st2 X + X st3 X + X st4 Step1
+st1 X + X st2 X + X st3 X + X st4 Step1 -
+st1 X + X st2 X + X st3 X + X st4 Step1 - Step2
+st1 X + X st2 X + X st3 X + X st4 Step1 - Step2 st5
+st1 X + X st2 X + X st3 X + X st4 Step1 - Step2 st5 Step4
+st1 X + X st2 X + X st3 X + X st4 Step1 - Step2 st5 Step4 -
+st1 X + X st2 X + X st3 X + X st4 Step1 - Step2 st5 Step4 - Step3
+st1 X + X st2 X + X st3 X - X st1 X + X st2 X + X st3 X - X st4
+st1 X + X st2 X + X st3 X - X st4 X - X st1 X + X st2 X + X st3 Step1
+st1 X + X st2 X + X st3 X - X st4 X st1 X + X st2 X + X st3 X - X st4 X -
+st1 X + X st2 X + X st3 X st1 X + X st2 Step1
+st1 X + X st2 X + X st3 X st1 X + X st2 X + X st3 Average
+st1 X + X st2 X + X st3 X st1 X + X st2 X + X st3 Step1
+st1 X + X st2 X + X st3 X st1 X + X st2 X + X st3 X +
+st1 X + X st2 X + X st3 X st1 X + X st2 X + X st3 X -
+st1 X + X st2 X -
+st1 X + X st2 X - +
+st1 X + X st2 X - + X st1 X + X st2 X - + X st3
+st1 X + X st2 X - + X st3 Step1
+st1 X + X st2 X - + X st3 Step1 -
+st1 X + X st2 X - + X st3 Step1 - Step2
+st1 X + X st2 X - X st1 X + X st2 Step1
+st1 X + X st2 X - X st1 X + X st2 X - X 
+st1 X + X st2 X st1 X + X st2 Count
+st1 X + X st2 X st1 X + X st2 X +
+st1 X -
+st1 X - +
+st1 X - + X st1 X - X st1 X st1 X +
+st1 X - -
+st1 X - - X st1 X - X st1 X - X st2
+st1 X - - X st1 X - X st1 X - X st2 Step1
+st1 X - - X st1 X - X st2 X - X st3 Step1 - Step2
+st1 X - Average choose...
+st1 X - Average choose... X st1 X - Average choose... X X st1 X - Average choose... X X Use
+st1 X - Average choose... X X Use st2
+st1 X - Average choose... X X Use st2 Average
+st1 X - Average choose... X X Use st2 Average X st1 X - Average choose... X X Use st2 Average X X st1 X - Average choose... X X Use st2 Average X X Use
+st1 X - Average choose... X X Use st2 Average X X Use -
+st1 X - Average choose... X X Use st2 Average X X Use - X st1 X - Average choose... X X Use st2 Average X X Use - X st3
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 +
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2 st4
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2 st4 Step3
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2 st4 Step3 /
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2 st4 Step3 / Count
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2 st4 Step3 / Count all
+st1 X - Average choose... X X Use st2 Average X X Use - X st3 Step1 + Step2 st4 Step3 / Count all Use
+st1 X - Median
+st1 X - Median all
+st1 X - Median all Use
+st1 X - Median all Use st2
+st1 X - Median all Use st2 Median
+st1 X - Median all Use st2 Median all
+st1 X - Median all Use st2 Median all Use
+st1 X - Median all Use st2 Median all Use -
+st1 X - Median all Use st2 Median all Use - X st1 X - Median all Use st2 Median all Use - X st3
+st1 X - Median all Use st2 Median all Use - X st3 Step1
+st1 X - Median all Use st2 Median all Use - X st3 Step1 +
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2 st4
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2 st4 Step3
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2 st4 Step3 /
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2 st4 Step3 / Count
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2 st4 Step3 / Count all
+st1 X - Median all Use st2 Median all Use - X st3 Step1 + Step2 st4 Step3 / Count all Use
+st1 X - X 
+st1 X - X  st2
+st1 X - X  st2 X - X st1 X - X  st2 X - X 
+st1 X - X  st2 X st1 X - X  st2 X -
+st1 X - X st1 X - Average
+st1 X - X st1 X - X st1 X - X 
+st1 X - X st1 X - X st1 X - X st1 X - X 
+st1 X - X st1 X - X st1 X - X st1 X - X st1 X - X st1 X - X st2
+st1 X - X st1 X - X st1 X - X st1 X - X st2
+st1 X - X st1 X - X st1 X - X st1 X - X st2 Step1 /
+st1 X - X st1 X - X st1 X - X st2
+st1 X - X st1 X - X st1 X st1 X -
+st1 X - X st1 X - X st1 X x
+st1 X - X st1 X - X st2
+st1 X - X st1 X /
+st1 X - X st1 X st1 X 
+st1 X - X st1 X st1 X +
+st1 X - X st2
+st1 X - X st2 Median
+st1 X - X st2 Median all
+st1 X - X st2 Median all Use
+st1 X - X st2 Median all Use -
+st1 X - X st2 Median all Use - Step1
+st1 X - X st2 Step1
+st1 X - X st2 Step1 +
+st1 X - X st2 Step1 + Count
+st1 X - X st2 Step1 + Count all
+st1 X - X st2 Step1 + X st1 X - X st2 Step1 x
+st1 X - X st2 Step1 -
+st1 X - X st2 Step1 - Count all
+st1 X - X st2 Step1 - X st1 X - X st2 Step1 - Count
+st1 X - X st2 Step1 /
+st1 X - X st2 Step1 / all
+st1 X - X st2 Step1 / all Use
+st1 X - X st2 Step1 / Count
+st1 X - X st2 Step1 / Count all
+st1 X - X st2 Step1 / Count all Use
+st1 X - X st2 Step1 / Count all Use 
+st1 X - X st2 Sum
+st1 X - X st2 Sum Sum X st1 X - X st2 Sum Sum X X st1 X - X st1 [7]
+st1 X - X st2 Sum X st1 X - X st2 Sum Sum
+st1 X - X st2 X 
+st1 X - X st2 X + X st1 X - X st2 X -
+st1 X - X st2 X - X st1 X - X st2 X - X st1 X - X st2 X - X st3
+st1 X - X st2 X - X st1 X - X st2 X - X st3
+st1 X - X st2 X - X st1 X - X st2 X - X st3 X - X st4 
+st1 X - X st2 X - X st3 
+st1 X - X st2 X - X st3  Count
+st1 X - X st2 X - X st3  Step1
+st1 X - X st2 X - X st3  Step1 +
+st1 X - X st2 X - X st3  Step1 + Step2
+st1 X - X st2 X - X st3 Average
+st1 X - X st2 X - X st3 Average Sum
+st1 X - X st2 X - X st3 Average Sum choose...
+st1 X - X st2 X - X st3 Average Sum choose... X st1 X - X st2 X - X st3 Average Sum choose... X Use
+st1 X - X st2 X - X st3 Step1
+st1 X - X st2 X - X st3 Step1 
+st1 X - X st2 X - X st3 Step1  +
+st1 X - X st2 X - X st3 Step1  + Step2
+st1 X - X st2 X - X st3 Step1 +
+st1 X - X st2 X - X st3 Step1 + Step1
+st1 X - X st2 X - X st3 Step1 + Step2
+st1 X - X st2 X - X st3 Step1 + Step2 
+st1 X - X st2 X - X st3 Step1 + Step2 st4
+st1 X - X st2 X - X st3 Step1 + Step2 st4 X st1 X - X st2 X - X st3 Step1 + Step2 st4 Step1
+st1 X - X st2 X - X st3 Step1 -
+st1 X - X st2 X - X st3 Step1 - +
+st1 X - X st2 X - X st3 Step1 - + Step2
+st1 X - X st2 X - X st3 Step1 /
+st1 X - X st2 X - X st3 Step1 / +
+st1 X - X st2 X - X st3 Step1 / + Step2
+st1 X - X st2 X - X st3 Step1 Step2
+st1 X - X st2 X - X st3 Step1 Step2 +
+st1 X - X st2 X - X st3 Step2
+st1 X - X st2 X - X st3 Step2 +
+st1 X - X st2 X - X st3 Step2 + Step1
+st1 X - X st2 X - X st3 Step2 /
+st1 X - X st2 X - X st3 Step2 / Step1
+st1 X - X st2 X - X st3 Sum
+st1 X - X st2 X - X st3 Sum all
+st1 X - X st2 X - X st3 Sum all choose...
+st1 X - X st2 X - X st3 Sum all choose... Step1
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use /
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use / Sum
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use / Sum Count
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use / Sum Count Step1
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use / Sum Count Step1 Step2
+st1 X - X st2 X - X st3 Sum all choose... Step1 Step2 Use / Sum Count Step1 Step2 Use
+st1 X - X st2 X - X st3 Sum all choose... X st1 X - X st2 X - X st3 Sum choose...
+st1 X - X st2 X - X st3 Sum all Use
+st1 X - X st2 X - X st3 Sum choose... X st1 X - X st2 X - X st3 Sum all Use
+st1 X - X st2 X - X st3 X + X st1 X - X st2 X - X st3 Count
+st1 X - X st2 X - X st3 X - X st1 X - X st2 X - X st3 X - X st4
+st1 X - X st2 X - X st3 X - X st4  Step1
+st1 X - X st2 X - X st3 X - X st4  Step1 +
+st1 X - X st2 X - X st3 X - X st4  Step1 + Step2
+st1 X - X st2 X - X st3 X - X st4  Step1 + Step2 st5
+st1 X - X st2 X - X st3 X - X st4  Step1 + Step2 st5 Step2
+st1 X - X st2 X - X st3 X - X st4  Step1 + Step2 st5 Step4
+st1 X - X st2 X - X st3 X - X st4  Step1 + Step2 st5 Step4 +
+st1 X - X st2 X - X st3 X - X st4  Step1 + Step2 st5 Step4 + Step3
+st1 X - X st2 X - X st3 X - X st4 Step1
+st1 X - X st2 X - X st3 X - X st4 Step1 +
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step2
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step2 st5
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step2 st5 Step4
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step2 st5 Step4 +
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step2 st5 Step4 + Step3
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step3
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step3 st5
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step3 st5 Step4
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step3 st5 Step4 +
+st1 X - X st2 X - X st3 X - X st4 Step1 + Step3 st5 Step4 + Step2
+st1 X - X st2 X - X st3 X - X st4 Step1 Step2
+st1 X - X st2 X - X st3 X - X st4 Step1 Step2 +
+st1 X - X st2 X - X st3 X - X st4 Step1 Step2 + st5
+st1 X - X st2 X - X st3 X - X st4 Step1 Step2 + st5 Step4
+st1 X - X st2 X - X st3 X - X st4 Step1 Step2 + st5 Step4 +
+st1 X - X st2 X - X st3 X - X st4 Step1 Step2 + st5 Step4 + Step3
+st1 X - X st2 X - X st3 X - X st4 Sum
+st1 X - X st2 X - X st3 X - X st4 Sum all
+st1 X - X st2 X - X st3 X - X st4 Sum all choose...
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x /
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose...
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose... all
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose... all choose...
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose... all choose... Step3
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose... all choose... Step3 Step2
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose... all choose... Step3 Step2 Step3
+st1 X - X st2 X - X st3 X - X st4 Sum all choose... Step1 Step2 Step3 Use x / Count choose... all choose... Step3 Step2 Step3 Use
+st1 X - X st2 X - X st3 X - X st4 Sum Step1
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use /
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use / Count
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use / Count Step3
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use / Count Step3 Step2
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use / Count Step3 Step2 Step1
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use / Count Step3 Step2 Step1 Use
+st1 X - X st2 X - X st3 X - X st4 Sum Step1 Step2 Step3 Use / Count Step3 Step2 Step1 Use 
+st1 X - X st2 X - X st3 X - X st4 X - X st1 X - X st1 X st1 X -
+st1 X - X st2 X - X st3 X - X st4 X - X st1 X - X st2 X - X st3 X - X st4 X - X st5
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 +
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3 +
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3 + Step4
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3 + Step4 st7
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3 + Step4 st7 Step5
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3 + Step4 st7 Step5 +
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step3 + Step4 st7 Step5 + Step6
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5 +
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5 + Step3
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5 + Step3 st7
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5 + Step3 st7 Step6
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5 + Step3 st7 Step6 +
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Step1 + Step2 st6 Step5 + Step3 st7 Step6 + Step4
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum all
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use /
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count Step3
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count Step3 Step4
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count Step3 Step4 Step2
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count Step3 Step4 Step2 Step1
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count Step3 Step4 Step2 Step1 Use
+st1 X - X st2 X - X st3 X - X st4 X - X st5 Sum Step1 Step2 Step3 Step4 Use / Count Step3 Step4 Step2 Step1 Use 
+st1 X - X st2 X - X st3 X - X st4 X st1 X - X st2 X - X st3 X - X st4 X -
+st1 X - X st2 X - X st3 X st1 X - X st2 X - X st3 X +
+st1 X - X st2 X - X st3 X st1 X - X st2 X - X st3 X -
+st1 X - X st2 X / X st1 X - X st2 X / X st3
+st1 X - X st2 X / X st3 Step1
+st1 X - X st2 X / X st3 Step1 -
+st1 X - X st2 X / X st3 Step1 - Step2
+st1 X - X st2 X st1 X - X st1 X X st1 X - - X st1 X - X X st1 X - X st2 X - X st1 X st1 X +
+st1 X - X st2 X st1 X - X st2 X +
+st1 X - X st2 X st1 X - X st2 X -
+st1 X - X st2 X st1 X - X st2 X /
+st1 X - X st2 X st1 X - X st2 X st1 X - X st2 X -
+st1 X - X st2 X st1 X - X st2 X x
+st1 X - X st2 X x
+st1 X - X st2 X x X st1 X - X st2 X x X st3
+st1 X - X st2 X x X st3 X - X st1 X - X st2 X st1 X - X st2 X X st1 X - X st2 X X st3
+st1 X - X st2 X x X st3 X st1 X - X st2 X x X st3 X -
+st1 X /
+st1 X / -
+st1 X / - X st1 X / - X st2
+st1 X / - X st2 X - X st1 X / - X st2 X - X st3
+st1 X / - X st2 X - X st3 Sum
+st1 X / - X st2 X - X st3 Sum X none Use
+st1 X / - X st2 X - X st3 Sum X st1 X / - X st2 X - X st3 Sum X none
+st1 X / - X st2 X st1 X / - X st2 X -
+st1 X / x /
+st1 X / x / X st1 X / x / X st2
+st1 X / x / X st2 Step1
+st1 X / X st1 X / X st1 X / x
+st1 X / X st1 X st1 X +
+st1 X / X st1 X X st1 X X X st1 X X X X st1 X X X X X st1 X X X X X X st1 X X X X X X X st1 X X X X X X X X st1 X X X X X X X X X st1 X X X X X X X X X X st1 X X X X X X X X X X X st1 X X X X X X X X X X X X st1 X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X X X X X X st1 X X X X X X X X X X X X X X X X X X X X X X st1 X X st1 X X -
+st1 X st1 X 
+st1 X st1 X +
+st1 X st1 X st1 X +
+st1 X x
+st1 X x - X st1 X x - X st2
+st1 X x - X st2 X - X st1 X x - X st2 X - X st3
+st1 X x - X st2 X - X st3 Step1
+st1 X x - X st2 X - X st3 Step1 -
+st1 X x - X st2 X - X st3 Step1 - Step2
+st1 X x - X st2 X st1 X x - X st2 X -
+st1 X x /
+st1 X x / -
+st1 X x / - x
+st1 X x / - x /
+st1 X x / - x / Sum
+st1 X x / - x / Sum all
+st1 X x / - x / Sum all Use
+st1 X x / X st1 X x X st1 X x X st2
+st1 X X st1 X X [4] 
+st1 X X st1 X X st1 X x -
+st1 X x X st1 X - -
+st1 X x X st2 Count
+st1 X x X st2 Count all
+st1 X x X st2 Count all Use
