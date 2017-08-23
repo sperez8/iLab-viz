@@ -40,6 +40,9 @@ def get_duration(row):
         duration = 10 #last action lasts zero seconds but we need to put a dummy variable here.
     return duration
 
+def clean_method(method):
+    return method.replace("}","").replace("{","").replace("x -",'')
+    
 def get_action_usage(df,column,action):
     '''Given an action or method, we detect its use using a particular column
     and then extract a list of time coordinates for when
@@ -55,6 +58,22 @@ def get_action_usage(df,column,action):
         A list of tuples with start times of the action and it's duration [(start1,duration1),(start2,duration2),...]
     '''
     return zip(df[df[column].str.contains(action,na=False)]['Time_seconds'],df[df[column].str.contains(action,na=False)]['Duration'])
+
+def get_action_usage_exact(df,column,action):
+    '''Given an action or method, we detect its use using a particular column
+    and then extract a list of time coordinates for when
+    they were used. These coordinates are in the format (start_time, duration)
+    
+    Args:
+        df (Pandas dataframe): The dataframe to search in.
+        column (str): The column where the method or action might be logged.
+        action (str): The name of the action or method to search for in the column.
+        
+
+    Returns:
+        A list of tuples with start times of the action and it's duration [(start1,duration1),(start2,duration2),...]
+    '''
+    return zip(df[df[column].str.match(action,na=False)]['Time_seconds'],df[df[column].str.match(action,na=False)]['Duration'])
 
 def merge_action_usage(x,y):
     '''
