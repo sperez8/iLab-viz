@@ -41,7 +41,7 @@ def get_duration(row):
     return duration
 
 def clean_method(method):
-    return method.replace("}","").replace("{","").replace("x -",'')
+    return method.replace("}","").replace("{","")
     
 def get_action_usage(df,column,action):
     '''Given an action or method, we detect its use using a particular column
@@ -73,9 +73,9 @@ def get_action_usage_exact(df,column,action):
     Returns:
         A list of tuples with start times of the action and it's duration [(start1,duration1),(start2,duration2),...]
     '''
-    return zip(df[df[column].str.match(action,na=False)]['Time_seconds'],df[df[column].str.match(action,na=False)]['Duration'])
+    return zip(df[df[column].str.match(action,as_indexer=True)]['Time_seconds'],df[df[column].str.match(action,as_indexer=True)]['Duration'])
 
-def merge_action_usage(x,y):
+def merge_usage(x,y):
     '''
     Given two lists of coordinates, we merged them and return the new coordinates.
     These coordinates are in the format (start_time, duration)
@@ -122,3 +122,59 @@ def merge_action_usage(x,y):
                 new_duration = d1 + s1 - merged[-1][0]
                 merged[-1] = (new_start,new_duration) #extend the duration of the last coordinate
     return merged
+
+def union_usage(x,y):
+    '''
+    Given two lists of coordinates, we find the union of comon time coordinates and return the new coordinates.
+    These coordinates are in the format (start_time, duration)
+    
+    Args:
+        x (list): One set of coordinates
+        y (list): A second set of coordinates
+
+    Returns:
+        A list of tuples with a union of start and duration coordinates [(start1,duration1),(start2,duration2),...]
+        
+    For example:
+        x = [(0,1),(2,3),(10,3)] #0,2,3,4,10,11,12
+        y = [(0,2),(3,1),(9,2),(12,2)] #0,1,3,9,10,12,13
+        then union_action_usage(x,y) -> [(0, 1), (3, 1), (10, 1), (12, 1)] #0,3,10,12
+
+    '''
+    x.sort() #sort them by start time
+    y.sort()
+    union = []
+    
+    #for pairs of coordinates, we check if we can union them
+    while len(x) > 0 and len(y) > 0:
+        (sx,dx) = x[0]
+        (sy,dy) = y[0]
+
+        if sx == sy: #if same start times, find min duration
+            union.append((sx,min(dx,dy)))
+            if dx<dy:
+                x.pop(0)
+            else:
+                y.pop(0)             
+        elif sx < sy and sx+dx > sy: # if they overlap
+            if sx+dx >= sy+dy: #if one coordinate bounds the other
+                union.append((sy,dy)) #we add that inner coordinate
+                y.pop(0) #and remove it
+            else: #if no bounding, then just overlap
+                union.append((sy,dx - (sy-sx))) #add the new coordinate with latest start time
+                x.pop(0) #and remove the earliest one
+        elif sy < sx and sy+dy > sx: # if they overlap (opposite scenario)
+            if sy+dy >= sx+dx: #if one coordinate bounds the other (opposite scenario)
+                union.append((sx,dx)) #we add that inner coordinate
+                x.pop(0) #and remove it
+            else:
+                union.append((sx,dy - (sx-sy))) #add the new coordinate with latest start time
+                y.pop(0) #and remove the earliest one
+        else:
+            #there was no union so we remove the earliest coordinate
+            if sx < sy:
+                x.pop(0)
+            else:
+                y.pop(0)
+
+    return union
