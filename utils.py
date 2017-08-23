@@ -178,3 +178,37 @@ def union_usage(x,y):
                 y.pop(0)
 
     return union
+
+def get_merged_method_usage(df, pattern):
+    m1 = get_action_usage_exact(df,'Cleaned method 1',pattern)
+    m2 = get_action_usage_exact(df,'Cleaned method 2',pattern)
+    return merge_usage(m1,m2)
+
+def get_single_value_usage(df):
+    method1 = get_action_usage_exact(df,'Cleaned method 1','st1 \d+$')
+    method2 = get_action_usage_exact(df,'Cleaned method 2','st1 \d+$')
+    return union_usage(method1,method2)
+
+REGEX_AVERAGE = 'st1 Average\s?(all)?\s?(Use)?\s?$'
+REGEX_SUM = 'st1 Sum\s?(all)?\s?(Use)?\s?$'
+REGEX_MEDIAN = 'st1 Median\s?(all)?\s?(Use)?\s?$'
+REGEX_COUNT = 'st1 Count\s?(all)?\s?(Use)?\s?$'
+
+def get_central_tendency_usage(df):
+    average = get_merged_method_usage(df,REGEX_AVERAGE)
+    sumall = get_merged_method_usage(df,REGEX_SUM)
+    median = get_merged_method_usage(df,REGEX_MEDIAN)
+    count = get_merged_method_usage(df,REGEX_COUNT)
+    merging1 = merge_usage(average,sumall)
+    merging2 = merge_usage(median,count)
+    return merge_usage(merging1,merging2)
+
+def get_evaluation_steps_usage(df):
+    submit_usage = get_action_usage(df,"Selection","submit")
+    evaluation_usage = get_action_usage(df,"Selection","evaluation")
+    checkIntuition_usage = get_action_usage(df,"Selection","checkIntuition")
+    
+    ##do some merging
+    merged1 = merge_usage(submit_usage,evaluation_usage)
+    merged2 = merge_usage(merged1, checkIntuition_usage)
+    return merged2
