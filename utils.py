@@ -45,16 +45,24 @@ opt_combos3 = {'none choose... all':'all',
           'all choose... none':'none',
           'all none choose...':'choose...',
           'choose... none all':'all',
-          'choose... all none':'none'}
+          'choose... all none':'none',
+          'all all all':'all',
+          'none none none':'none',
+          'choose... choose... choose...':'choose...'}
+
 opt_combos2 = {'none all':'all',
           'none choose...':'choose...',
           'all none':'none',
           'all choose...':'choose...',
           'choose... all':'all',
-          'choose... none':'none'}
+          'choose... none':'none',
+          'all all':'all',
+          'choose... choose...':'choose...',
+          'none none':'none'}
 
-symbol_combos3 = {'x - +' : '+','x - /' : '/','x + -' : '-','x + /' : '/','x / -' : '-','x / +' : '+','- x +' : '+','- x /' : '/','- + x' : 'x','- + /' : '/','- / x' : 'x','- / +' : '+','+ x -' : '-','+ x /' : '/','+ - x' : 'x','+ - /' : '/','+ / x' : 'x','+ / -' : '-','/ x -' : '-','/ x +' : '+','/ - x' : 'x','/ - +' : '+','/ + x' : 'x','/ + -' : '-'}
-symbol_combos2 = {'x -' : '-','x +' : '+','x /' : '/','- x' : 'x','- +' : '+','- /' : '/','+ x' : 'x','+ -' : '-','+ /' : '/','/ x' : 'x','/ -' : '-','/ +' : '+'}
+symbol_combos3 = {'x - +' : '+','x - /' : '/','x + -' : '-','x + /' : '/','x / -' : '-','x / +' : '+','- x +' : '+','- x /' : '/','- + x' : 'x','- + /' : '/','- / x' : 'x','- / +' : '+','+ x -' : '-','+ x /' : '/','+ - x' : 'x','+ - /' : '/','+ / x' : 'x','+ / -' : '-','/ x -' : '-','/ x +' : '+','/ - x' : 'x','/ - +' : '+','/ + x' : 'x','/ + -' : '-','- - -':'-','+ + +':'+','/ / /':'/','x x x':'x'}
+symbol_combos2 = {'x -' : '-','x +' : '+','x /' : '/','- x' : 'x','- +' : '+','- /' : '/','+ x' : 'x','+ -' : '-','+ /' : '/','/ x' : 'x','/ -' : '-','/ +' : '+','- -' : '-','+ +' : '+','/ /' : '/','x x' : 'x'}
+
 def clean_method(method):
     method = method.replace("}","").replace("{","").replace("Use","")
     for combo,replacement in opt_combos3.items():
