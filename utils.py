@@ -40,8 +40,26 @@ def get_duration(row):
         duration = 10 #last action lasts zero seconds but we need to put a dummy variable here.
     return duration
 
+combos3 = {'none choose... all':'all',
+          'none all choose...':'choose...',
+          'all choose... none':'none',
+          'all none choose...':'choose...',
+          'choose... none all':'all',
+          'choose... all none':'none'}
+combos2 = {'none all':'all',
+          'none choose...':'choose...',
+          'all none':'none',
+          'all choose...':'choose...',
+          'choose... all':'all',
+          'choose... none':'none'}
+
 def clean_method(method):
-    return method.replace("}","").replace("{","")
+    method = method.replace("}","").replace("{","").replace("Use","")
+    for combo,replacement in combos3.items():
+        method = method.replace(combo,replacement)
+    for combo,replacement in combos2.items():
+        method = method.replace(combo,replacement)
+    return method
     
 def clean_coords(coords_brocken_up):
     #since the coordinates all subsequent in time, we want to merge them to clean them up.
