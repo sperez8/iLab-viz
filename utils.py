@@ -87,6 +87,31 @@ def clean_coords(coords_brocken_up):
         else:
             coords_brocken_up = coords
 
+
+#Using the example used for sketch.
+def prepare_session(df,sessionid):
+    new_df = df[df['Session Id'] == sessionid]
+    
+#     Next we filter out all actions with "INCORRECT" outcomes
+    before = new_df.shape[0]
+    new_df = new_df[new_df['Outcome'] == 'CORRECT']
+    print "After removin 'incorrect' actions, we are left with {0} rows out of {1}".format(new_df.shape[0],before)
+    
+#     We also clean up the methods removing annoying characters like "{"
+    new_df['Cleaned method 1'] = new_df[['Method_Recognized_1_Copied']].applymap(lambda method:clean_method(method))
+    new_df['Cleaned method 2'] = new_df[['Method_Recognized_2_Copied']].applymap(lambda method:clean_method(method))
+
+#     We create a column with the data for the contrasting cases
+    new_df['cases'] = new_df['CF(new1)'].str.replace('"','') +','+ new_df['CF(new2)'].str.replace('"','')
+    
+#     Next we fix the time logs and convert them to seconds. We also recalculate the time between actions now that we have gotten rid of incorrect actions.
+    time_start = list(new_df['time first action'])[0]
+    new_df['Time_seconds'] = new_df[['Time']].applymap(lambda current_time: fix_time(time_start,current_time))
+    new_df['Timeshifted'] = new_df[['Time']].shift(-1)
+    new_df['Duration'] = new_df[['Time','Timeshifted']].apply(calculate_duration, axis=1)
+    return new_df
+
+
 def action_usage(df,column,action):
     '''Given an action or method, we detect its use using a particular column
     and then extract a list of time coordinates for when
@@ -314,53 +339,6 @@ def range_usage(df):
     usage.sort()
     return usage
 
-
-def regex_extrapolated_range(case_min,case_max):
-    pattern = 'st\d+ {0} \- {1}'.format(case_max,case_min)
-    return pattern
-
-def extrapolated_range_usage(df):
-    usage = []
-    cases = all_cases(df)
-    for case,coords in cases.items():
-        start = coords[0]
-        end = coords[1]
-        
-        lcase = case[0].split(" ")
-        rcase = case[1].split(" ")
-        lcase.sort()
-        rcase.sort()
-        
-        #find min and maxes of cases for the regex
-        lmin1,lmin2,lmax2,lmax1 = lcase[0],lcase[1],lcase[-2],lcase[-1]
-        rmin1,rmin2,rmax2,rmax1 = rcase[0],rcase[1],rcase[-2],rcase[-1]
-        
-        #get all times that the range is used somewhere the method
-        rangel1 = action_usage(df,'Cleaned method 1',regex_extrapolated_range(lmin1,lmax1))
-        rangel2 = action_usage(df,'Cleaned method 1',regex_extrapolated_range(lmin2,lmax2))
-        ranger1 = action_usage(df,'Cleaned method 2',regex_extrapolated_range(rmin1,rmax1))
-        ranger2 = action_usage(df,'Cleaned method 2',regex_extrapolated_range(rmin2,rmax2))
-
-#         print case, coords[0], coords[0]+coords[1]
-#         print "rangel1:", regex_extrapolated_range(lmin1,lmax1)
-#         print "rangel2:", regex_extrapolated_range(lmin2,lmax2)
-#         print "ranger1:", regex_extrapolated_range(rmin1,rmax1)
-#         print "ranger2:", regex_extrapolated_range(rmin2,rmax2)
-        
-        #merge the two ranges per method
-        range1 = intersect_usage(rangel1,rangel2)
-        range2 = intersect_usage(ranger1,ranger2)
-        
-        # and keep only the times that fall within the current case
-        range1_for_case = intersect_usage(range1,[coords])
-        range2_for_case = intersect_usage(range2,[coords])
-
-        # Merge when it's used on both cases
-        usage.extend(clean_coords(merge_usage(range1_for_case,range2_for_case)))
-
-    usage.sort()
-    return usage
-
 def evaluation_steps_usage(df):
     submit_usage = action_usage(df,"Selection","submit")
     evaluation_usage = action_usage(df,"Selection","evaluation")
@@ -369,3 +347,12 @@ def evaluation_steps_usage(df):
     ##do some merging
     merged1 = merge_usage(submit_usage,evaluation_usage)
     return merge_usage(merged1, checkIntuition_usage)
+
+def case_usage(df):
+    usage = []
+    cases = all_cases(df)
+    for case,coords in cases.items():
+        start = coords[0]
+        end = 30+20+30
+        usage.append((start,end))
+    return usage
