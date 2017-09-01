@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta, date
 from pandas import notnull
+import re
 
 def fix_time(time_start,current_time):
     """This function fixes the timestamps used by converting them to seconds, starting at zero.
@@ -63,8 +64,30 @@ opt_combos2 = {'none all':'all',
 symbol_combos3 = {'x - +' : '+','x - /' : '/','x + -' : '-','x + /' : '/','x / -' : '-','x / +' : '+','- x +' : '+','- x /' : '/','- + x' : 'x','- + /' : '/','- / x' : 'x','- / +' : '+','+ x -' : '-','+ x /' : '/','+ - x' : 'x','+ - /' : '/','+ / x' : 'x','+ / -' : '-','/ x -' : '-','/ x +' : '+','/ - x' : 'x','/ - +' : '+','/ + x' : 'x','/ + -' : '-','- - -':'-','+ + +':'+','/ / /':'/','x x x':'x'}
 symbol_combos2 = {'x -' : '-','x +' : '+','x /' : '/','- x' : 'x','- +' : '+','- /' : '/','+ x' : 'x','+ -' : '-','+ /' : '/','/ x' : 'x','/ -' : '-','/ +' : '+','- -' : '-','+ +' : '+','/ /' : '/','x x' : 'x'}
 
+functions_combos2 = {"Average Average":"Average",
+                        "Sum Sum":"Sum",
+                        "Count Count":"Count",
+                        "Median Median":"Median",
+                        "Average Sum":"Average",
+                        "Sum Sum":"Sum",
+                        "Count Sum":"Count",
+                        "Median Sum":"Median",
+                        "Average Average":"Average",
+                        "Sum Average":"Average",
+                        "Count Average":"Average",
+                        "Median Average":"Average",
+                        "Average Count":"Count",
+                        "Sum Count":"Count",
+                        "Count Count":"Count",
+                        "Median Count":"Count",
+                        "Average Median":"Median",
+                        "Sum Median":"Median",
+                        "Count Median":"Median",
+                        "Median Median":"Median"}
+
 def clean_method(method):
     method = method.replace("}","").replace("{","").replace("Use","")
+    method = re.sub(' +',' ',method) #remove extra spaces
     for combo,replacement in opt_combos3.items():
         method = method.replace(combo,replacement)
     for combo,replacement in opt_combos2.items():
@@ -72,6 +95,8 @@ def clean_method(method):
     for combo,replacement in symbol_combos3.items():
         method = method.replace(combo,replacement)
     for combo,replacement in symbol_combos2.items():
+        method = method.replace(combo,replacement)
+    for combo,replacement in functions_combos2.items():
         method = method.replace(combo,replacement)
     return method
     
@@ -198,6 +223,8 @@ def merge_usage(x,y):
                 new_start = merged[-1][0]
                 new_duration = d1 + s1 - merged[-1][0]
                 merged[-1] = (new_start,new_duration) #extend the duration of the last coordinate
+            else: #if it fails, then there is no overlap and we merge them
+                merged.append((s1,d1))
     return merged
 
 def intersect_usage(x,y):
@@ -355,4 +382,88 @@ def case_usage(df):
         start = coords[0]
         end = 30+20+30
         usage.append((start,end))
+    return usage
+
+def regex_count_gaps(gapvalues):
+    pattern = "st\d+ Count\s?( choose\.\.\.)?(\s[({0})])+".format('|'.join(gapvalues))
+    return pattern
+
+def count_gaps_usage(df):
+    usage = []
+    cases = all_cases(df)
+    for case,coords in cases.items():
+        start = coords[0]
+        end = coords[1]
+        
+        lcase = case[0].split(" ")
+        rcase = case[1].split(" ")
+        lcase.sort()
+        rcase.sort()
+        
+        #get gap values for the regex
+        gapvalues_left = set(range( int(min(lcase)) , int(max(lcase)) )) - set([int(x) for x in lcase]) 
+        gapvalues_right = set(range( int(min(rcase)) , int(max(rcase)) )) - set([int(x) for x in rcase]) 
+
+        #get all times that the range is used somewhere the method
+        if len(gapvalues_left)>0:
+            re_left = regex_count_gaps([str(x) for x in gapvalues_left])
+            range1 = action_usage(df,'Cleaned method 1',re_left)
+        else:
+            range1 = action_usage(df,'Cleaned method 1',"st\d+ Count none")
+            
+        if len(gapvalues_right)>0:
+            re_right = regex_count_gaps([str(x) for x in gapvalues_right])
+            range2 = action_usage(df,'Cleaned method 2',re_right)
+        else:
+            range2 = action_usage(df,'Cleaned method 2',"st\d+ Count none")     
+
+        # and keep only the times that fall within the current case
+        range1_for_case = intersect_usage(range1,[coords])
+        range2_for_case = intersect_usage(range2,[coords])
+
+        # Merge when it's used on both cases
+        usage.extend(clean_coords(merge_usage(range1_for_case,range2_for_case)))
+
+    usage.sort()
+    return usage
+
+
+def regex_extrapolated_range(case_max1,case_min1,case_max2,case_min2):
+    pattern = "(?:st\d+ {0} \- {1} st\d+ {2} \- {3}|st\d+ {2} \- {3} st\d+ {0} \- {1}) st3 Step[12] [x\+\-\\\\] Step[12]".format(case_max1,case_min1,case_max2,case_min2)
+    return pattern
+
+def extrapolated_range_usage(df):
+    usage = []
+    cases = all_cases(df)
+    for case,coords in cases.items():
+        start = coords[0]
+        end = coords[1]
+        
+        lcase = case[0].split(" ")
+        rcase = case[1].split(" ")
+        lcase.sort()
+        rcase.sort()
+        
+        #find min and maxes of cases for the regex
+        lmin1,lmin2,lmax2,lmax1 = lcase[0],lcase[1],lcase[-2],lcase[-1]
+        rmin1,rmin2,rmax2,rmax1 = rcase[0],rcase[1],rcase[-2],rcase[-1]
+        
+        #get all times that the range is used somewhere the method
+        range1 = action_usage(df,'Cleaned method 1',regex_extrapolated_range(lmax1,lmin1,lmax2,lmin2))
+        range2 = action_usage(df,'Cleaned method 2',regex_extrapolated_range(rmax1,rmin1,rmax2,rmin2))
+
+#         print case, coords[0], coords[0]+coords[1]
+#         print "rangel1:", regex_extrapolated_range(lmin1,lmax1)
+#         print "rangel2:", regex_extrapolated_range(lmin2,lmax2)
+#         print "ranger1:", regex_extrapolated_range(rmin1,rmax1)
+#         print "ranger2:", regex_extrapolated_range(rmin2,rmax2)
+        
+        # and keep only the times that fall within the current case
+        range1_for_case = intersect_usage(range1,[coords])
+        range2_for_case = intersect_usage(range2,[coords])
+
+        # Merge when it's used on both cases
+        usage.extend(clean_coords(merge_usage(range1_for_case,range2_for_case)))
+
+    usage.sort()
     return usage
