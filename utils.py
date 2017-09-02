@@ -467,3 +467,26 @@ def extrapolated_range_usage(df):
 
     usage.sort()
     return usage
+
+
+build_actions = ["add\d",
+                "button\d\_\d",
+                "delete\d",
+                "deleteAll\d",
+                "function\d",
+                "operator\d\_\d",
+                "pointsSelection\d",
+                "Selection",
+                "step\d\_\d"]
+
+def build_events(df):
+    usage = []
+    for re_build in build_actions:
+        building = action_usage(df,'Selection',re_build)
+        usage.extend(building)
+    #since these are actions - not episodes, we give them all a duration of 2 seconds
+    usage = [(x,3) for x,y in usage]
+
+    usage = clean_coords(usage)
+    usage.sort()
+    return usage
