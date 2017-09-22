@@ -324,16 +324,44 @@ def single_value_usage(df):
     method2 = action_usage_exact(df,'Cleaned method 2','st\d \d\s?[$|st]')
     return intersect_usage(method1,method2)
 
-REGEX_AVERAGE = 'st\d+ Average all?'
-REGEX_SUM = 'st\d+ Sum all?'
-REGEX_MEDIAN = 'st\d+ Median all?'
+REGEX_AVERAGE = "st\d+ Average (?:all)?(?:choose(?:\s[({{0}})])+)?"
+REGEX_SUM = "st\d+ Sum (?:all)?(?:choose(?:\s[({{0}})])+)?"
+REGEX_MEDIAN = "st\d+ Median (?:all)?(?:choose(?:\s[({{0}})])+)?"
 
 def central_tendency_usage(df):
-    average = merge_method_usage(df,REGEX_AVERAGE)
-    sumall = merge_method_usage(df,REGEX_SUM)
-    median = merge_method_usage(df,REGEX_MEDIAN)
-    merging1 = merge_usage(average,sumall)
-    return merge_usage(median,merging1)
+    usage = []
+    cases = all_cases(df)
+    for case,coords in cases.items():
+        start = coords[0]
+        end = coords[1]
+        
+        lcase = [str(int(x)) for x in case[0].split(" ")]
+        rcase = [str(int(x)) for x in case[1].split(" ")]
+        lcase.sort()
+        rcase.sort()
+
+
+        average = action_usage(df, 'Cleaned method 1' ,REGEX_AVERAGE.format('|'.join(lcase)))
+        sumall = action_usage(df, 'Cleaned method 1' ,REGEX_SUM.format('|'.join(lcase)))
+        median = action_usage(df, 'Cleaned method 1' ,REGEX_MEDIAN.format('|'.join(lcase)))
+        merging = merge_usage(average,sumall)
+        cent1 = merge_usage(merging, median)
+
+        average = action_usage(df, 'Cleaned method 2' ,REGEX_AVERAGE.format('|'.join(rcase)))
+        sumall = action_usage(df, 'Cleaned method 2' ,REGEX_SUM.format('|'.join(rcase)))
+        median = action_usage(df, 'Cleaned method 2' ,REGEX_MEDIAN.format('|'.join(rcase)))
+        merging = merge_usage(average,sumall)
+        cent2 = merge_usage(merging, median)
+
+        # and keep only the times that fall within the current case
+        cent1_for_case = intersect_usage(cent1,[coords])
+        cent2_for_case = intersect_usage(cent2,[coords])
+
+        # Merge when it's used on both cases
+        usage.extend(clean_coords(merge_usage(cent1_for_case,cent2_for_case)))
+
+    usage.sort()
+    return usage
 
 def regex_count_gaps(gapvalues):
     pattern = "st\d+ Count\s?( choose\.\.\.)?(\s[({0})])+".format('|'.join(gapvalues))
@@ -489,9 +517,9 @@ def distance_usage(df):
         rmin,rmax = min(right_values),max(right_values)
 
         for v1,v2 in list(itertools.combinations(left_values, 2)):
-            if (v1 == lmax and v2== lmin):
+            if (v1 == lmax and v2== lmin): #this is range so we ignore
                 continue
-            if (v2 == lmax and v1== lmin):
+            if (v2 == lmax and v1== lmin): #this is range so we ignore
                 continue
             else:
                 distance1 = merge_usage(distance1,action_usage(df,'Cleaned method 1',regex_distance(v1,v2)))
