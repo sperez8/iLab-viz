@@ -566,3 +566,63 @@ def build_events(df):
     usage = clean_coords(usage)
     usage.sort()
     return usage
+
+def multiplication_usage(df):
+    return merge_method_usage(df,'st\d+ [a-zA-Z0-9(?: all)(?: choose)]+ x [a-zA-Z0-9(?: all)(?: choose)]+')
+
+def addition_usage(df):
+    return merge_method_usage(df,'st\d+ [a-zA-Z0-9(?: all)(?: choose)]+ \+ [a-zA-Z0-9(?: all)(?: choose)]+')
+
+def combo_central_tendency_usage(df):
+    usage = []
+    cases = all_cases(df)
+    for case,coords in cases.items():
+        start = coords[0]
+        end = coords[1]
+        
+        lcase = [str(int(x)) for x in case[0].split(" ")]
+        rcase = [str(int(x)) for x in case[1].split(" ")]
+        lcase.sort()
+        rcase.sort()
+
+        average = action_usage(df, 'Cleaned method 1' ,REGEX_AVERAGE.format('|'.join(lcase)))
+        sumall = action_usage(df, 'Cleaned method 1' ,REGEX_SUM.format('|'.join(lcase)))
+        median = action_usage(df, 'Cleaned method 1' ,REGEX_MEDIAN.format('|'.join(lcase)))
+
+        combo_cent1 = []
+        # find any intersections of a combo of central tendency methods
+        for c1,c2 in list(itertools.combinations([average,sumall,median], 2)):
+            combo_cent1.extend(intersect_usage(c1,c2))
+
+        average = action_usage(df, 'Cleaned method 2' ,REGEX_AVERAGE.format('|'.join(rcase)))
+        sumall = action_usage(df, 'Cleaned method 2' ,REGEX_SUM.format('|'.join(rcase)))
+        median = action_usage(df, 'Cleaned method 2' ,REGEX_MEDIAN.format('|'.join(rcase)))
+
+        combo_cent2 = []
+        # find any intersections of a combo of central tendency methods
+        for c1,c2 in list(itertools.combinations([average,sumall,median], 2)):
+            combo_cent2.extend(intersect_usage(c1,c2))
+
+        # and keep only the times that fall within the current case
+        combo_cent1_for_case = intersect_usage(combo_cent1,[coords])
+        combo_cent2_for_case = intersect_usage(combo_cent2,[coords])
+
+        # Merge when it's used on both cases
+        usage.extend(clean_coords(merge_usage(combo_cent1_for_case,combo_cent2_for_case)))
+
+    usage.sort()
+    return usage
+
+def other_usage(df):
+    mult = multiplication_usage(df)
+    add = addition_usage(df)
+    combo_cent =combo_central_tendency_usage(df)
+    
+    usage = merge_usage(mult,add)
+    usage.extend(combo_cent)
+    
+    all_methods = [single_value_usage,central_tendency_usage,range_usage,distance_usage,count_gaps_usage]
+    for m1,m2 in list(itertools.combinations(all_methods, 2)):
+        usage.extend(intersect_usage(m1(df),m2(df)))       
+    
+    return usage
