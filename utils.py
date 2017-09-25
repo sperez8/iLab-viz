@@ -285,8 +285,8 @@ def intersect_usage(x,y):
     return intersect
 
 def merge_method_usage(df, pattern):
-    m1 = action_usage_exact(df,'Cleaned method 1',pattern)
-    m2 = action_usage_exact(df,'Cleaned method 2',pattern)
+    m1 = action_usage(df,'Cleaned method 1',pattern)
+    m2 = action_usage(df,'Cleaned method 2',pattern)
     return merge_usage(m1,m2)
 
 def all_cases(df):
@@ -324,9 +324,9 @@ def single_value_usage(df):
     method2 = action_usage_exact(df,'Cleaned method 2','st\d \d\s?[$|st]')
     return intersect_usage(method1,method2)
 
-REGEX_AVERAGE = "st\d+ Average (?:all)?(?:choose(?:\s[({{0}})])+)?"
-REGEX_SUM = "st\d+ Sum (?:all)?(?:choose(?:\s[({{0}})])+)?"
-REGEX_MEDIAN = "st\d+ Median (?:all)?(?:choose(?:\s[({{0}})])+)?"
+REGEX_AVERAGE = "Average (?:all)?(?:choose(?:\s[({{0}})])+)?"
+REGEX_SUM = "Sum (?:all)?(?:choose(?:\s[({{0}})])+)?"
+REGEX_MEDIAN = "Median (?:all)?(?:choose(?:\s[({{0}})])+)?"
 
 def central_tendency_usage(df):
     usage = []
@@ -364,8 +364,9 @@ def central_tendency_usage(df):
     return usage
 
 def regex_count_gaps(gapvalues):
-    pattern = "st\d+ Count\s?( choose\.\.\.)?(\s[({0})])+".format('|'.join(gapvalues))
+    pattern = "Count\s?( choose\.\.\.)?(\s[({0})])+".format('|'.join(gapvalues))
     return pattern
+
 
 def count_gaps_usage(df):
     usage = []
@@ -388,13 +389,13 @@ def count_gaps_usage(df):
             re_left = regex_count_gaps([str(x) for x in gapvalues_left])
             range1 = action_usage(df,'Cleaned method 1',re_left)
         else:
-            range1 = action_usage(df,'Cleaned method 1',"st\d+ Count none")
+            range1 = action_usage(df,'Cleaned method 1',"Count none")
             
         if len(gapvalues_right)>0:
             re_right = regex_count_gaps([str(x) for x in gapvalues_right])
             range2 = action_usage(df,'Cleaned method 2',re_right)
         else:
-            range2 = action_usage(df,'Cleaned method 2',"st\d+ Count none")     
+            range2 = action_usage(df,'Cleaned method 2',"Count none")     
 
         # and keep only the times that fall within the current case
         range1_for_case = intersect_usage(range1,[coords])
@@ -465,7 +466,7 @@ def case_usage(df):
 #     return usage
 
 def regex_range(case_min,case_max):
-    pattern = '^st\d+ {0} \- {1}'.format(case_max,case_min)
+    pattern = '{0} \- {1}'.format(case_max,case_min)
     return pattern
 
 #TO DO
@@ -481,8 +482,8 @@ def range_usage(df):
         rmin,rmax = min(case[1].split(" ")),max(case[1].split(" "))
         
         #get all times that the range is used
-        range1 = action_usage_exact(df,'Cleaned method 1',regex_range(lmin,lmax))
-        range2 = action_usage_exact(df,'Cleaned method 2',regex_range(rmin,rmax))
+        range1 = action_usage(df,'Cleaned method 1',regex_range(lmin,lmax))
+        range2 = action_usage(df,'Cleaned method 2',regex_range(rmin,rmax))
         
         #keep only the times that fall within the current case
         range1_for_case = intersect_usage(range1,[coords])
@@ -495,7 +496,7 @@ def range_usage(df):
 
 
 def regex_distance(v1,v2):
-    pattern = 'st\d+ {0} \- {1}'.format(v1,v2)
+    pattern = '{0} \- {1}'.format(v1,v2)
     return pattern
 
 def distance_usage(df):
@@ -566,7 +567,7 @@ def build_events(df):
     usage = clean_coords(usage)
     usage.sort()
     return usage
-    
+
 def regex_all_numbers(case_numbers):
     return ''.join(["(?=.*"+x+")" for x in case_numbers])
 
@@ -593,10 +594,10 @@ def count_all_usage(df):
     return usage
 
 def multiplication_usage(df):
-    return merge_method_usage(df,'st\d+ [a-zA-Z0-9(?: all)(?: choose)]+ x [a-zA-Z0-9(?: all)(?: choose)]+')
+    return merge_method_usage(df,'[a-zA-Z0-9(?: all)(?: choose)]+ x [a-zA-Z0-9(?: all)(?: choose)]+')
 
 def addition_usage(df):
-    return merge_method_usage(df,'st\d+ [a-zA-Z0-9(?: all)(?: choose)]+ \+ [a-zA-Z0-9(?: all)(?: choose)]+')
+    return merge_method_usage(df,'[a-zA-Z0-9(?: all)(?: choose)]+ \+ [a-zA-Z0-9(?: all)(?: choose)]+')
 
 def combo_central_tendency_usage(df):
     usage = []
