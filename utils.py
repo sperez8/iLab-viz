@@ -319,14 +319,20 @@ def all_cases(df):
             raise ValueError('This case seems to be used more than once: '+case)
     return coordinates
 
-def single_value_usage(df):
-    method1 = action_usage_exact(df,'Cleaned method 1','st\d \d\s?[$|st]')
-    method2 = action_usage_exact(df,'Cleaned method 2','st\d \d\s?[$|st]')
-    return intersect_usage(method1,method2)
+REGEX_SINGLE_VALUE_FIRST = "st\d \d(?:$|(?:\sst)|(?:\s[\-\+x/]\s[A-Z]))"
+REGEX_SINGLE_VALUE_SECOND = "st\d [A-Z][\sa-z]+ [\-\+x/] \d(?:$|(?:\s?st))"
 
-REGEX_AVERAGE = "Average (?:all)?(?:choose(?:\s[({{0}})])+)?"
-REGEX_SUM = "Sum (?:all)?(?:choose(?:\s[({{0}})])+)?"
-REGEX_MEDIAN = "Median (?:all)?(?:choose(?:\s[({{0}})])+)?"
+def single_value_usage(df):
+    usage= []
+    method1 = action_usage(df,'Cleaned method 1',REGEX_SINGLE_VALUE_FIRST)
+    usage.extend(action_usage(df,'Cleaned method 2',REGEX_SINGLE_VALUE_FIRST))
+    usage.extend(action_usage(df,'Cleaned method 1',REGEX_SINGLE_VALUE_SECOND))
+    usage.extend(action_usage(df,'Cleaned method 2',REGEX_SINGLE_VALUE_SECOND))
+    return clean_coords(usage)
+
+REGEX_AVERAGE = "Average (?:all)|(?:choose\.\.\.(?:\s[(?:{{0}})])+)"
+REGEX_SUM = "Sum (?:all)|(?:choose\.\.\.(?:\s[(?:{{0}})])+)"
+REGEX_MEDIAN = "Median (?:all)|(?:choose\.\.\.(?:\s[(?:{{0}})])+)"
 
 def central_tendency_usage(df):
     usage = []
