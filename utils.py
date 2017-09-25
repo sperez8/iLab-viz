@@ -566,6 +566,31 @@ def build_events(df):
     usage = clean_coords(usage)
     usage.sort()
     return usage
+    
+def regex_all_numbers(case_numbers):
+    return ''.join(["(?=.*"+x+")" for x in case_numbers])
+
+REGEX_COUNT_ALL = "Count (?:all)|(?:choose\.\.\.{0})"
+def count_all_usage(df):
+    usage = []
+    cases = all_cases(df)
+    for case,coords in cases.items():
+        start = coords[0]
+        end = coords[1]
+        
+        lcase = [str(int(x)) for x in case[0].split(" ")]
+        rcase = [str(int(x)) for x in case[1].split(" ")]
+        lcase.sort()
+        rcase.sort()
+        
+        count_left = action_usage(df, 'Cleaned method 1' ,REGEX_COUNT_ALL.format(regex_all_numbers(lcase)))
+        count_right = action_usage(df, 'Cleaned method 2' ,REGEX_COUNT_ALL.format(regex_all_numbers(rcase)))
+
+        count_case_left = intersect_usage(count_left,[coords])
+        count_case_right = intersect_usage(count_right,[coords])
+
+        usage.extend(clean_coords(merge_usage(count_case_right,count_case_left)))
+    return usage
 
 def multiplication_usage(df):
     return merge_method_usage(df,'st\d+ [a-zA-Z0-9(?: all)(?: choose)]+ x [a-zA-Z0-9(?: all)(?: choose)]+')
