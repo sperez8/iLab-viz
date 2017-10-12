@@ -568,7 +568,7 @@ def build_events(df):
         building = action_usage(df,'Selection',re_build)
         usage.extend(building)
     #since these are actions - not episodes, we give them all a duration of 2 seconds
-    usage = [(x,3) for x,y in usage]
+    usage = [(x,2) for x,y in usage]
 
     usage = clean_coords(usage)
     usage.sort()
