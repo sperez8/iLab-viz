@@ -647,11 +647,11 @@ def combo_central_tendency_usage(df):
 
 def other_usage(df):
     mult = multiplication_usage(df)
-    add = addition_usage(df)
-    combo_cent =combo_central_tendency_usage(df)
+    # add = addition_usage(df)
+    combo_cent = combo_central_tendency_usage(df)
     
-    usage = merge_usage(mult,add)
-    usage.extend(combo_cent)
+    usage = merge_usage(mult,combo_cent)
+    # usage.extend(add)
     
     all_methods = [single_value_usage,central_tendency_usage,range_usage,distance_usage,count_gaps_usage]
     for m1,m2 in list(itertools.combinations(all_methods, 2)):
