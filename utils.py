@@ -121,7 +121,7 @@ def prepare_session(df,sessionid):
 #     Next we filter out all actions with "INCORRECT" outcomes
     before = new_df.shape[0]
     new_df = new_df[new_df['Outcome'] == 'CORRECT']
-    print "After removin 'incorrect' actions, we are left with {0} rows out of {1}".format(new_df.shape[0],before)
+    # print "After removin 'incorrect' actions, we are left with {0} rows out of {1}".format(new_df.shape[0],before)
     
 #     We also clean up the methods removing annoying characters like "{"
     new_df['Cleaned method 1'] = new_df[['Method_Recognized_1_Copied']].applymap(lambda method:clean_method(method))
@@ -131,7 +131,7 @@ def prepare_session(df,sessionid):
     new_df['cases'] = new_df['CF(new1)'].str.replace('"','') +','+ new_df['CF(new2)'].str.replace('"','')
     
 #     Next we fix the time logs and convert them to seconds. We also recalculate the time between actions now that we have gotten rid of incorrect actions.
-    time_start = list(new_df['time first action'])[0]
+    time_start = list(new_df['Time'])[0]
     new_df['Time_seconds'] = new_df[['Time']].applymap(lambda current_time: fix_time(time_start,current_time))
     new_df['Timeshifted'] = new_df[['Time']].shift(-1)
     new_df['Duration'] = new_df[['Time','Timeshifted']].apply(calculate_duration, axis=1)
@@ -155,7 +155,7 @@ def action_usage(df,column,action):
     return zip(df[df[column].str.contains(action,na=False)]['Time_seconds'],df[df[column].str.contains(action,na=False)]['Duration'])
 
 def action_usage_exact(df,column,action):
-    '''Given an action or method, we detect its use using a particular column
+    '''Given an action or method, we detect its exact use (no combined action or method) using a particular column
     and then extract a list of time coordinates for when
     they were used. These coordinates are in the format (start_time, duration)
     
@@ -285,6 +285,7 @@ def intersect_usage(x,y):
     return intersect
 
 def merge_method_usage(df, pattern):
+	# For merging whenever an action is used in either the right or leftset of the case
     m1 = action_usage(df,'Cleaned method 1',pattern)
     m2 = action_usage(df,'Cleaned method 2',pattern)
     return merge_usage(m1,m2)
@@ -319,8 +320,15 @@ def all_cases(df):
             raise ValueError('This case seems to be used more than once: '+case)
     return coordinates
 
-REGEX_SINGLE_VALUE_FIRST = "st\d \d(?:$|(?:\sst)|(?:\s[\-\+x/]\s[A-Z]))"
-REGEX_SINGLE_VALUE_SECOND = "st\d [A-Z][\sa-z]+ [\-\+x/] \d(?:$|(?:\s?st))"
+REGEX_SINGLE_VALUE_FIRST = "st\d \d(?:$|(?:\sst)|(?:\s[\-\+x\/]\s[A-Z]))"
+# matches:
+# st1 5
+# st1 5 + Ave...
+# st1 5 - Cou...
+REGEX_SINGLE_VALUE_SECOND = "st\d [A-Z][\sa-z]+ [\-\+x\/] \d(?:$|(?:\s?st))"
+# matches:
+# st1 Average all + 5 st
+# st2 Count all - 5
 
 def single_value_usage(df):
     usage= []
@@ -330,9 +338,13 @@ def single_value_usage(df):
     usage.extend(action_usage(df,'Cleaned method 2',REGEX_SINGLE_VALUE_SECOND))
     return clean_coords(usage)
 
-REGEX_AVERAGE = "Average (?:all)|(?:choose\.\.\.(?:\s[(?:{{0}})])+)"
-REGEX_SUM = "Sum (?:all)|(?:choose\.\.\.(?:\s[(?:{{0}})])+)"
-REGEX_MEDIAN = "Median (?:all)|(?:choose\.\.\.(?:\s[(?:{{0}})])+)"
+REGEX_AVERAGE = "(?:Average all)|(?:Average choose\.\.\.(?:\s[(?:{{0}})])+)"
+REGEX_SUM = "(?:Sum all)|(?:Sum choose\.\.\.(?:\s[(?:{{0}})])+)"
+REGEX_MEDIAN = "(?:Median all)|(?:Median choose\.\.\.(?:\s[(?:{{0}})])+)"
+# matches:
+# Average all
+# Sum  choose... x y z 			#where x,y,z are numbers from the case
+
 
 def central_tendency_usage(df):
     usage = []
@@ -372,7 +384,9 @@ def central_tendency_usage(df):
 def regex_count_gaps(gapvalues):
     pattern = "Count\s?( choose\.\.\.)?(\s[({0})])+".format('|'.join(gapvalues))
     return pattern
-
+# matches:
+# Count choose... x y z 
+# Count x y z
 
 def count_gaps_usage(df):
     usage = []
@@ -504,6 +518,8 @@ def range_usage(df):
 def regex_distance(v1,v2):
     pattern = '{0} \- {1}'.format(v1,v2)
     return pattern
+# matches:
+# x - y 		# where z and y are case numbers
 
 def distance_usage(df):
     usage = []
@@ -600,10 +616,15 @@ def count_all_usage(df):
     return usage
 
 def multiplication_usage(df):
-    return merge_method_usage(df,'[a-zA-Z0-9(?: all)(?: choose)]+ x [a-zA-Z0-9(?: all)(?: choose)]+')
+    return merge_method_usage(df,'[a-zA-Z0-9(?: all)(?: choose)\.]+ x [a-zA-Z0-9(?: all)(?: choose)\.]+')
 
 def addition_usage(df):
-    return merge_method_usage(df,'[a-zA-Z0-9(?: all)(?: choose)]+ \+ [a-zA-Z0-9(?: all)(?: choose)]+')
+    return merge_method_usage(df,'[a-zA-Z0-9(?: all)(?: choose)\.]+ \+ [a-zA-Z0-9(?: all)(?: choose)\.]+')
+
+# matches:
+# Count choose... 2 3 x Sum all
+# Average all + Sum all
+# Count choose... 2 3 x 4
 
 def combo_central_tendency_usage(df):
     usage = []
