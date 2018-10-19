@@ -2,6 +2,7 @@ from datetime import datetime, timedelta, date
 from pandas import notnull
 import itertools
 import re
+import pandas as pd
 
 def fix_time(time_start,current_time):
     """This function fixes the timestamps used by converting them to seconds, starting at zero.
@@ -679,3 +680,37 @@ def other_usage(df):
         usage.extend(intersect_usage(m1(df),m2(df)))       
     
     return usage
+
+def get_key_ideas(df):
+    
+    def format_time(t):
+        mins = int(t/60)
+        secs = int(t-mins*60)
+        return '{0}m {1}s'.format(mins,secs)
+
+    #merge method from right and left side
+    df['Cleaned joined methods'] = df['Cleaned method 1'].map(str) + ' | ' + df['Cleaned method 2']
+    #edit actions so weither they are from the right side or left doesn't matter
+    # ie. delete1 and delete2 -> delete
+    df['Selection_unsided'] = [s.replace('1','').replace('2','') for s in list(df['Selection'].map(str))]
+    #remove all consecutive duplicate actions
+    # ie. delete delete delete -> delete NaN NaN
+    df['Selection_unsided'] = df['Selection_unsided'].loc[df['Selection_unsided'].shift() != df['Selection_unsided']]
+    #remove all consecutive duplicate methods
+    df['Cleaned joined methods'] = df['Cleaned joined methods'].loc[df['Cleaned joined methods'].shift() != df['Cleaned joined methods']]
+    #shift the Selection (or student action) so that we can find their methods BEFORE they delete or submit.
+    df['Selection_unsided_shifted'] = df['Selection_unsided'].shift(-1)
+
+    #Now we can find all submitted ideas on first submit and first delete
+    # we don't need to make it as a "set" anymore!
+#     submitted_ideas = set(df[df['Selection'].str.contains('submit',na=False)]['Cleaned joined methods'])
+#     deleted_all_ideas = set(df[df['Selection'].str.contains('deleteAll',na=False)]['Cleaned joined methods'])
+    submitted_ideas = df[df['Selection_unsided_shifted'].str.contains('submit',na=False)][['Selection_unsided_shifted','Time_seconds','Cleaned joined methods']]
+    deleted_ideas = df[df['Selection_unsided_shifted'].str.contains('delete',na=False)][['Selection_unsided_shifted','Time_seconds','Cleaned joined methods']]
+    ideas = pd.concat([deleted_ideas,submitted_ideas])
+    #remove empty methods
+    ideas = ideas[ideas['Cleaned joined methods'].str.contains("st1 | st1", regex=False) == False]
+    ideas['timestamp'] = ideas[['Time_seconds']].applymap(lambda t: format_time(t))
+    ideas.reset_index(drop=True, inplace=True)
+    ideas.rename(columns = {'Selection_unsided_shifted':'action','Cleaned joined methods':'tried methods'}, inplace = True)
+    return ideas[['action','timestamp','tried methods']]
