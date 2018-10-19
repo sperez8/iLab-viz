@@ -17,6 +17,7 @@ colors = {"Cases":"white",
          'evaluation steps': "#525252",
           'submit': "#525252",
           "Build":'black',
+          "delete":'black',
           "deleteAll":'black',
         }
 column_to_use = {"Now try working on this new example":"Feedback Text",
@@ -24,6 +25,7 @@ column_to_use = {"Now try working on this new example":"Feedback Text",
                  "submit": "Selection",
                  "evaluation": "Selection",
                  "checkIntuition": "Selection",
+                 "delete":"Selection",
                  "deleteAll":"Selection",
                 }
 
@@ -38,7 +40,7 @@ function_to_use = {"Cases":case_usage,
                    'Count all': count_all_usage,
                    "Other":other_usage}
 
-to_plot = ["Cases","intuition",'Single value','Central tendency',"Count all","Count gaps",'Range',"Other distance","Other","Build","deleteAll","submit","evaluation steps"]
+to_plot = ["Cases","intuition",'Single value','Central tendency',"Count all","Count gaps",'Range',"Other distance","Other","Build","delete","deleteAll","submit","evaluation steps"]
 
 def plot(df,to_plot,colors, column_to_use, function_to_use):
     fig = plt.figure(figsize=(18,9))
