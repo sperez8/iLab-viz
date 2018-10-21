@@ -710,6 +710,7 @@ def get_key_ideas(df):
     ideas = pd.concat([deleted_ideas,submitted_ideas])
     #remove empty methods
     ideas = ideas[ideas['Cleaned joined methods'].str.contains("st1 | st1", regex=False) == False]
+    ideas.sort_values(by='Time_seconds',inplace=True)
     ideas['timestamp'] = ideas[['Time_seconds']].applymap(lambda t: format_time(t))
     ideas.reset_index(drop=True, inplace=True)
     ideas.rename(columns = {'Selection_unsided_shifted':'action','Cleaned joined methods':'tried methods'}, inplace = True)
