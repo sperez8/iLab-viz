@@ -716,7 +716,7 @@ def get_key_ideas(df):
     raw_cases = list(set(df['cases']))
     num_cases = len(raw_cases)
     df_cases = pd.DataFrame()
-    df_cases['Selection_unsided_shifted'] = ['** get new case **']*num_cases
+    df_cases['Selection_unsided_shifted'] = ['get new case']*num_cases
     df_cases['Time_seconds'] = [action_usage(df,'cases',case)[0][0] for case in raw_cases]
     df_cases['cases'] = ['-']*num_cases
     df_cases['Cleaned joined methods'] = ['-']*num_cases

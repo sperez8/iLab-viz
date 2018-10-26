@@ -42,7 +42,7 @@ function_to_use = {"Cases":case_usage,
 
 to_plot = ["Cases","intuition",'Single value','Central tendency',"Count all","Count gaps",'Range',"Other distance","Other","Build","delete","deleteAll","submit","evaluation steps"]
 
-def plot(df,to_plot,colors, column_to_use, function_to_use):
+def plot(df,to_plot,colors, column_to_use, function_to_use, for_export=True):
     fig = plt.figure(figsize=(18,9))
     ax = plt.subplot()
     spacing =10
@@ -100,4 +100,6 @@ def plot(df,to_plot,colors, column_to_use, function_to_use):
     ax.set_yticks(range(spacing/2,len(actions)*spacing,spacing))
     ax.set_yticklabels([a.capitalize() for a in actions],fontsize=15)
     ax.grid(True)
+    if for_export:
+    	return plt
     plt.show()
