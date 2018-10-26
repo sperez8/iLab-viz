@@ -59,9 +59,9 @@ def plot(df,to_plot,colors, column_to_use, function_to_use):
                 ymax = max(max(left),max(right))
                 ymin = min(min(left),min(right))
                 Xl = [coords[0]+30]*len(left)
-                Yl = [l/(ymax)*(spacing-2.5)+1+pos for l in left]
+                Yl = [(l-ymin+1)/(ymax-ymin+1)*(spacing-2.5)+1+pos for l in left]
                 Xr = [coords[0]+30+20]*len(right)
-                Yr = [r/(ymax)*(spacing-2.5)+1+pos for r in right]
+                Yr = [(r-ymin+1)/(ymax-ymin+1)*(spacing-2.5)+1+pos for r in right]
                 ax.plot(Xl,Yl,'.',color="darkgrey",markersize=10)
                 ax.plot(Xr,Yr,'.',color="darkgrey",markersize=10)
                 case_pos = pos

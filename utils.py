@@ -686,7 +686,7 @@ def get_key_ideas(df):
     def format_time(t):
         mins = int(t/60)
         secs = int(t-mins*60)
-        return '{0}m {1}s'.format(mins,secs)
+        return '{0}:{1}'.format(mins,secs)
 
     #merge method from right and left side
     df['Cleaned joined methods'] = df['Cleaned method 1'].map(str) + ' | ' + df['Cleaned method 2']
@@ -703,15 +703,28 @@ def get_key_ideas(df):
 
     #Now we can find all submitted ideas on first submit and first delete
     # we don't need to make it as a "set" anymore!
-#     submitted_ideas = set(df[df['Selection'].str.contains('submit',na=False)]['Cleaned joined methods'])
-#     deleted_all_ideas = set(df[df['Selection'].str.contains('deleteAll',na=False)]['Cleaned joined methods'])
-    submitted_ideas = df[df['Selection_unsided_shifted'].str.contains('submit',na=False)][['Selection_unsided_shifted','Time_seconds','Cleaned joined methods']]
-    deleted_ideas = df[df['Selection_unsided_shifted'].str.contains('delete',na=False)][['Selection_unsided_shifted','Time_seconds','Cleaned joined methods']]
+    #     submitted_ideas = set(df[df['Selection'].str.contains('submit',na=False)]['Cleaned joined methods'])
+    #     deleted_all_ideas = set(df[df['Selection'].str.contains('deleteAll',na=False)]['Cleaned joined methods'])
+    submitted_ideas = df[df['Selection_unsided_shifted'].str.contains('submit',na=False)][['Selection_unsided_shifted','Time_seconds','cases','Cleaned joined methods']]
+    deleted_ideas = df[df['Selection_unsided_shifted'].str.contains('delete',na=False)][['Selection_unsided_shifted','Time_seconds','cases','Cleaned joined methods']]
     ideas = pd.concat([deleted_ideas,submitted_ideas])
     #remove empty methods
     ideas = ideas[ideas['Cleaned joined methods'].str.contains("st1 | st1", regex=False) == False]
+    ideas.replace(',',' | ',regex=True, inplace=True)
+
+    #Let's add rows to separate cases:
+    raw_cases = list(set(df['cases']))
+    num_cases = len(raw_cases)
+    df_cases = pd.DataFrame()
+    df_cases['Selection_unsided_shifted'] = ['** get new case **']*num_cases
+    df_cases['Time_seconds'] = [action_usage(df,'cases',case)[0][0] for case in raw_cases]
+    df_cases['cases'] = ['-']*num_cases
+    df_cases['Cleaned joined methods'] = ['-']*num_cases
+    ideas = pd.concat([ideas, df_cases])
+
+    #sort by time and clean format the time in minutes and seconds
     ideas.sort_values(by='Time_seconds',inplace=True)
     ideas['timestamp'] = ideas[['Time_seconds']].applymap(lambda t: format_time(t))
     ideas.reset_index(drop=True, inplace=True)
     ideas.rename(columns = {'Selection_unsided_shifted':'action','Cleaned joined methods':'tried methods'}, inplace = True)
-    return ideas[['action','timestamp','tried methods']]
+    return ideas[['action','timestamp','cases','tried methods']]
